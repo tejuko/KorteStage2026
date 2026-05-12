@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Living Archive</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="ambient-field" aria-hidden="true"></div>
+
+  <header class="hero">
+    <p class="hero-label">DIGITAL KNOWLEDGE ARCHIVE</p>
+    <h1>THE LIVING ARCHIVE</h1>
+    <p class="hero-subtitle">Portfolio • Development Journey • Stageverslag</p>
+  </header>
+
+  <nav class="archive-nav" aria-label="Archive navigation">
+    <button class="nav-btn active" data-view="chapters">Chapters</button>
+    <button class="nav-btn" data-view="projects">Projects</button>
+    <button class="nav-btn" data-view="artifacts">Artifacts</button>
+  </nav>
+
+  <main>
+    <section class="view active" id="chaptersView">
+      <div class="section-intro">
+        <p>ARCHIVED WEEKS</p>
+        <h2>CHAPTERS</h2>
+      </div>
+
+      <div class="chapter-grid" id="chapterGrid"></div>
+
+      <div class="book-view hidden" id="bookView">
+        <div class="book-topbar">
+          <button id="closeBook">Close Archive</button>
+          <div class="book-info">
+            <span id="bookWeek">WEEK 16</span>
+            <span id="pageCounter">PAGE 1 / 1</span>
+          </div>
+        </div>
+
+        <div class="book-layout">
+          <button class="page-button" id="prevPage" aria-label="Previous page">←</button>
+          <div class="book-shell">
+            <div class="book-spine" aria-hidden="true"></div>
+            <article class="book-page" id="bookPage" aria-live="polite"></article>
+          </div>
+          <button class="page-button" id="nextPage" aria-label="Next page">→</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="view" id="projectsView">
+      <div class="section-intro">
+        <p>DEVELOPMENT WORK</p>
+        <h2>PROJECTS</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <span>WORDPRESS • ACF</span>
+          <h3>Barbie ACF Project</h3>
+          <p>Custom CPT architecture, relationship systems, themed WordPress archive.</p>
+        </article>
+
+        <article class="project-card">
+          <span>FIGMA • BRICKS</span>
+          <h3>SEO Landing Page</h3>
+          <p>Figma-to-WordPress implementation using Bricks Builder.</p>
+        </article>
+
+        <article class="project-card">
+          <span>SEO • WORKFLOW</span>
+          <h3>Sabé Linkplan</h3>
+          <p>Large-scale internal link implementation with process improvements.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="view" id="artifactsView">
+      <div class="section-intro">
+        <p>DOWNLOADABLE FILES</p>
+        <h2>ARTIFACTS</h2>
+      </div>
+
+      <div class="artifact-grid">
+        <a href="./assets/pdfs/stageverslag.pdf" download class="artifact-card">
+          <span>PDF DOSSIER</span>
+          <h3>Stageverslag</h3>
+          <p>Complete internship archive.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

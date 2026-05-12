@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Living Archive</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+  <div class="noise"></div>
+  <div class="scanline-overlay" aria-hidden="true"></div>
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <div class="particle-field" id="particleField" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="hero">
+    <h1 class="title">THE LIVING ARCHIVE</h1>
+    <p class="subtitle">
+      Portfolio • Dagboek • Experimenten
+    </p>
+  </header>
+
+  <nav class="top-nav">
+    <button data-section="portfolio">Portfolio</button>
+    <button data-section="daily">Daglogs</button>
+    <button data-section="weekly">Weeklogs</button>
+    <button data-section="artifacts">Artifacts</button>
+  </nav>
+
+  <main>
+
+    <section id="portfolio" class="section active">
+      <div class="section-header">
+        <h2>IDENTITY WALL</h2>
+        <p>Een verzameling digitale artefacten uit mijn stage- en maakproces.</p>
+      </div>
+
+      <div class="project-grid identity-wall" id="identityWall">
+
+        <article class="project-card identity-card">
+          <div class="project-glow"></div>
+          <span>PROJECTS</span>
+          <h3>Development Work</h3>
+          <p>
+            WordPress, ACF, Bricks, SEO pages en experimentele interfaces.
+          </p>
+        </article>
+
+        <a class="project-card identity-card" href="https://tejuko.github.io/Portfolio_Tess_Kollof/" target="_blank" rel="noreferrer">
+          <div class="project-glow"></div>
+          <span>PORTFOLIO</span>
+          <h3>Bekijk mijn werk
+          </h3>
+          <p>Een website met mijn projecten en werk.</p>
+        </a>        
+        
+        <a class="project-card identity-card" href="./assets/pdfs/CV Tess Kollof.pdf" download>
+          <div class="project-glow"></div>
+          <span>CV</span>
+          <h3>Curriculum Vitae</h3>
+          <p>
+            Mijn rol, vaardigheden, leerdoelen en groei tijdens de stageperiode.
+          </p>
+        </a>
+
+        <a class="project-card identity-card" href="https://github.com/" target="_blank" rel="noreferrer">
+          <div class="project-glow"></div>
+          <span>GITHUB</span>
+          <h3>Code Archive</h3>
+          <p>Repositories, experimenten en technische sporen van mijn werk.</p>
+        </a>
+
+        <a class="project-card identity-card" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+          <div class="project-glow"></div>
+          <span>LINKEDIN</span>
+          <h3>Professional Signal</h3>
+          <p>Mijn professionele profiel en netwerk buiten dit archief.</p>
+        </a>
+
+        <a class="project-card identity-card" href="./assets/pdfs/stageverslag.pdf" download>
+          <div class="project-glow"></div>
+          <span>PDF</span>
+          <h3>Stage Report</h3>
+          <p>Het volledige stageverslag als downloadbaar dossier.</p>
+        </a>
+
+        <article class="project-card identity-card">
+          <div class="project-glow"></div>
+          <span>EXPERIMENTS</span>
+          <h3>Lab Notes</h3>
+          <p>Ontwerpstudies, prototypes en losse vondsten uit het leerproces.</p>
+        </article>
+
+      </div>
+    </section>
+
+
+    <section id="daily" class="section">
+      <div class="section-header">
+        <h2>DAILY RECORDS</h2>
+        <p>Alle daglogs als archive records. Open een dossier om door de logs te swipen.</p>
+      </div>
+
+      <div class="daily-archive-grid" id="dailyArchiveGrid"></div>
+    </section>
+
+
+    <section id="weekly" class="section">
+
+      <div class="archive-header">
+
+        <p class="archive-label">
+          DIGITAL ARCHIVE
+        </p>
+
+        <h2>
+          WEEK CHAPTERS
+        </h2>
+
+        <p class="archive-description">
+          Open archived development chapters.
+        </p>
+
+      </div>
+
+
+      <!-- WEEK SELECTOR -->
+
+      <div class="chapter-grid" id="chapterGrid">
+
+      </div>
+
+
+      <!-- BOOK VIEW -->
+
+      <div class="book-view hidden" id="bookView">
+
+        <div class="book-topbar">
+
+          <button id="closeBook">
+            CLOSE ARCHIVE
+          </button>
+
+          <div class="page-indicator" id="pageIndicator">
+            PAGE 1 / 1
+          </div>
+
+        </div>
+
+
+        <div class="book-container">
+
+          <button class="page-btn" id="prevPage">
+            ←
+          </button>
+
+
+          <div class="book-page-v2" id="bookPage">
+
+          </div>
+
+
+          <button class="page-btn" id="nextPage">
+            →
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="artifacts" class="section">
+      <div class="section-header">
+        <h2>ARTIFACTS</h2>
+        <p>Classified dossiers en downloads uit het stage-archief.</p>
+      </div>
+
+      <div class="artifact-container" id="artifactContainer"></div>
+    </section>
+
+  </main>
+
+  <div class="log-modal daily-book-modal" id="dailyModal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+
+    <div class="book-view daily-reader">
+
+      <div class="book-topbar">
+
+        <button id="closeDailyModal">
+          CLOSE
+        </button>
+
+        <div class="page-indicator" id="dailyPageIndicator">
+          PAGE 1 / 1
+        </div>
+
+      </div>
+
+      <div class="book-container">
+
+        <button class="page-btn" id="prevDaily">
+          ←
+        </button>
+
+        <div class="book-page-v2" id="dailyPage">
+          <!-- JS vult dit -->
+        </div>
+
+        <button class="page-btn" id="nextDaily">
+          →
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
