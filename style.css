@@ -1107,7 +1107,7 @@ body.has-custom-cursor * {
   }
 
   .artifact-card {
-    padding: 1.5rem;
+    padding: 2.75rem 1.5rem 1.5rem;
   }
 
   .artifact-card h2 {
