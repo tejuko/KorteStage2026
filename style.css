@@ -1105,6 +1105,14 @@ body.has-custom-cursor * {
   .page-content h2 {
     font-size: clamp(1.45rem, 7vw, 2rem);
   }
+
+  .artifact-card {
+    padding: 1.5rem;
+  }
+
+  .artifact-card h2 {
+    font-size: clamp(1.5rem, 7vw, 3rem);
+  }
 }
 
 @media (max-width: 460px) {
@@ -1115,12 +1123,6 @@ body.has-custom-cursor * {
   .modal-page,
   .book-page-v2 {
     padding: 1.35rem;
-  }
-
-  .modal-page-meta {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 0.45rem;
   }
 
   .side-nav-btn,
