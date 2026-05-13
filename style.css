@@ -4073,6 +4073,11 @@ body {
   color: #d4a843;
 }
 
+/* Weeklog book-view: zelfde topruimte als daglog modal */
+.book-view {
+  padding-top: clamp(1rem, 3vw, 3rem);
+}
+
 /* ==========================================================
    LOG MODAL ACHTERGROND — BLURRY PERKAMENT
    Semi-transparant navy met blur i.p.v. bijna-zwart.
