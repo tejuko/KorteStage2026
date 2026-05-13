@@ -3616,3 +3616,320 @@ body {
 @media (pointer: coarse) {
   .daily-record-card::before { display: none; }
 }
+
+/* ==========================================================
+   NAVY & IVOOR — BOEKOMSLAG STIJL
+   Achtergrond: ivoor/perkament (zoals de witte boekomslag)
+   Kaarten: diep navy blauw (zoals de boekrug)
+   Accenten: warm goud
+   Perkamentpagina's: ONAANGEPAST
+========================================================== */
+
+/* Tekstkleuren voor elementen buiten de kaarten */
+:root {
+  --text: #1c1205;
+  --muted: rgba(55,38,12,0.65);
+}
+
+/* Achtergrond: zacht ivoor/perkament met warme vignette */
+body {
+  background:
+    radial-gradient(ellipse 90% 45% at 50% -5%, rgba(200,162,52,0.10), transparent 68%),
+    radial-gradient(ellipse 100% 80% at 50% 108%, rgba(150,112,30,0.07), transparent 58%),
+    linear-gradient(180deg,
+      #faf4e2 0%,
+      #f4ead0 28%,
+      #ede3c6 58%,
+      #e5d9b6 100%);
+}
+
+/* Titel: diep navy blauw gradient */
+.title {
+  background: linear-gradient(140deg, #4a6ec0 0%, #243e98 48%, #111e5c 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: none;
+  filter: drop-shadow(0 2px 16px rgba(15,25,80,0.15));
+}
+
+/* Subtitle: sepia/bruin op perkament */
+.subtitle {
+  color: rgba(55,38,12,0.65);
+}
+
+/* Sectiekoppen: navy op perkament */
+.section-header h2,
+.archive-header h2,
+.page-intro h2 {
+  color: #1c2d62;
+  text-shadow: none;
+}
+
+.archive-label {
+  color: #1c2d62;
+  text-shadow: none;
+  opacity: 0.88;
+}
+
+.section-header p,
+.archive-description,
+.page-intro p {
+  color: rgba(52,35,10,0.68);
+}
+
+/* Ambient glow: heel subtiel op lichte achtergrond */
+.ambient-glow {
+  width: 70rem;
+  height: 70rem;
+  top: -42rem;
+  right: -22rem;
+  background: radial-gradient(circle,
+    rgba(198,152,38,0.16),
+    rgba(130,82,8,0.05) 42%,
+    transparent 68%);
+  filter: blur(60px);
+}
+
+/* Particles: donkerder goud voor leesbaarheid op licht */
+.particle-field span {
+  background: rgba(178,132,24,0.40);
+  box-shadow: 0 0 10px rgba(178,132,24,0.50);
+}
+
+/* Scanline & noise: onzichtbaar op lichte achtergrond */
+.scanline-overlay { opacity: 0.02; }
+.noise { opacity: 0.025; }
+
+/* === ALLE KAARTEN: DIEP NAVY BLAUW MET GOUD === */
+
+.chapter-card,
+.daily-record-card,
+.project-card,
+.identity-card,
+.opdracht-card,
+.experiment-card,
+.artifact-card {
+  background:
+    radial-gradient(ellipse at 20% 18%, rgba(55,80,155,0.50) 0%, transparent 52%),
+    radial-gradient(ellipse at 80% 82%, rgba(6,12,42,0.38) 0%, transparent 48%),
+    linear-gradient(148deg, #2a3e80 0%, #1a2c62 38%, #122048 72%, #0c1838 100%);
+  color: #f0e8d4;
+  border: 1px solid rgba(198,155,42,0.44);
+}
+
+/* Basis hover */
+.chapter-card:hover,
+.project-card:hover,
+.identity-card:hover,
+.artifact-card:hover,
+.opdracht-card:hover,
+.experiment-card:hover {
+  border-color: rgba(218,175,52,0.82);
+  box-shadow:
+    0 30px 78px rgba(8,15,52,0.58),
+    0 0 0 1px rgba(218,175,52,0.22),
+    inset 0 1px 0 rgba(100,130,198,0.22);
+}
+
+/* Glow overlay op navy: warm goud */
+.project-card::after,
+.chapter-card::after,
+.artifact-card::after,
+.daily-record-card::after {
+  background:
+    radial-gradient(circle at var(--glow-x, 80%) var(--glow-y, 15%), rgba(200,158,42,0.20), transparent 38%),
+    linear-gradient(120deg, transparent, rgba(200,158,42,0.07), transparent);
+}
+
+/* === CHAPTER CARDS === */
+
+.chapter-card {
+  box-shadow:
+    inset 7px 0 22px rgba(0,0,0,0.40),
+    inset 0 1px 0 rgba(88,118,195,0.28),
+    0 18px 56px rgba(8,15,52,0.48),
+    0 2px 0 rgba(195,150,38,0.32);
+}
+
+.chapter-card:hover {
+  transform: translateY(-16px) rotateX(6deg) scale(1.02);
+  box-shadow:
+    inset 7px 0 22px rgba(0,0,0,0.40),
+    0 42px 105px rgba(8,15,52,0.62),
+    0 0 0 1px rgba(218,175,52,0.28),
+    inset 0 1px 0 rgba(88,118,195,0.28);
+}
+
+.chapter-card::before { border-color: rgba(198,152,38,0.30); }
+
+.chapter-card h3   { color: #f0e8d4; }
+.chapter-card p    { color: rgba(215,200,172,0.76); }
+.chapter-number    { color: #d4a843; text-shadow: 0 0 18px rgba(200,155,40,0.55); }
+
+.chapter-card button {
+  background: rgba(198,152,38,0.12);
+  border: 1px solid rgba(198,152,38,0.40);
+  color: #d4a843;
+  font-family: 'Cinzel', serif;
+  font-size: 0.76rem;
+  letter-spacing: 0.22rem;
+}
+.chapter-card button:hover {
+  background: rgba(198,152,38,0.22);
+  border-color: rgba(218,175,52,0.65);
+  color: #e4bc50;
+}
+
+.chapter-glow {
+  background: radial-gradient(circle, rgba(200,152,38,0.28), transparent 70%);
+}
+
+/* === DAILY RECORD KAARTEN === */
+
+.daily-record-card {
+  box-shadow:
+    inset 5px 0 15px rgba(0,0,0,0.38),
+    inset 0 1px 0 rgba(80,110,182,0.25),
+    0 10px 34px rgba(8,15,52,0.40);
+}
+
+.daily-record-card:hover,
+.daily-record-card:focus-visible {
+  border-color: rgba(218,175,52,0.75);
+  box-shadow:
+    inset 5px 0 15px rgba(0,0,0,0.38),
+    0 28px 72px rgba(8,15,52,0.54),
+    inset 0 1px 0 rgba(80,110,182,0.25);
+}
+
+.daily-record-card::before {
+  background: linear-gradient(180deg,
+    rgba(195,150,38,0.18),
+    rgba(195,150,38,0.52) 28%,
+    rgba(195,150,38,0.52) 72%,
+    rgba(195,150,38,0.18));
+}
+
+.daily-record-card h3  { color: #f0e8d4; }
+.record-date           { color: #d4a843; text-shadow: 0 0 14px rgba(200,155,40,0.50); }
+.record-code           { color: rgba(190,172,140,0.45); }
+
+.record-scan {
+  background: linear-gradient(180deg, transparent, rgba(195,150,38,0.09), transparent);
+}
+
+/* === IDENTITY / OVER MIJ KAARTEN === */
+
+.identity-card::before {
+  background:
+    linear-gradient(180deg, rgba(195,150,38,0.06), transparent 38%),
+    repeating-linear-gradient(90deg, rgba(195,150,38,0.06) 0 1px, transparent 1px 68px);
+}
+
+.identity-card span { color: #d4a843; text-shadow: 0 0 14px rgba(200,155,40,0.42); }
+.identity-card h3   { color: #f0e8d4; }
+.identity-card p    { color: rgba(215,200,172,0.78); }
+
+/* === OPDRACHT KAARTEN === */
+
+.opdracht-card {
+  box-shadow: 0 7px 28px rgba(8,15,52,0.36);
+}
+
+.opdracht-card::before {
+  background: repeating-linear-gradient(90deg, rgba(195,150,38,0.07) 0 1px, transparent 1px 68px);
+}
+
+.opdracht-title  { color: #f0e8d4; }
+.opdracht-desc   { color: rgba(215,200,172,0.76); }
+.opdracht-client { color: #d4a843; }
+
+.opdracht-tag {
+  background: rgba(198,152,38,0.12);
+  border-color: rgba(198,152,38,0.26);
+  color: #d4a843;
+}
+
+.status-afgerond {
+  background: rgba(42,120,75,0.15);
+  border-color: rgba(42,120,75,0.32);
+  color: #5acea0;
+}
+
+.status-lopend {
+  background: rgba(198,152,38,0.12);
+  border-color: rgba(198,152,38,0.26);
+  color: #d4a843;
+}
+
+/* === EXPERIMENT KAARTEN === */
+
+.experiment-card::after {
+  background: linear-gradient(90deg, transparent, rgba(198,155,42,0.42), transparent);
+}
+
+.experiment-title  { color: #f0e8d4; }
+.experiment-body   { color: rgba(215,200,172,0.76); }
+.experiment-date   { color: #d4a843; }
+
+.experiment-type {
+  background: rgba(198,152,38,0.12);
+  border-color: rgba(198,152,38,0.24);
+  color: #d4a843;
+}
+
+/* === ARTIFACT KAART === */
+
+.artifact-card {
+  box-shadow:
+    0 28px 75px rgba(8,15,52,0.52),
+    inset 0 1px 0 rgba(80,110,182,0.22);
+}
+
+.artifact-card h2   { color: #f0e8d4; }
+.artifact-card p    { color: rgba(215,200,172,0.76); }
+.artifact-card span { color: #d4a843; }
+
+.artifact-card::before { color: rgba(198,152,38,0.48); }
+.artifact-card.is-downloading::before { color: rgba(198,152,38,0.82); }
+
+/* === NAV KNOPPEN (op perkament achtergrond) === */
+
+.top-nav button {
+  background: rgba(16,25,65,0.88);
+  border-color: rgba(195,150,38,0.40);
+  color: #f0e8d4;
+  backdrop-filter: blur(12px);
+}
+.top-nav button:hover {
+  background: rgba(26,38,92,0.94);
+  border-color: rgba(218,175,52,0.68);
+}
+
+/* === SUBPAGINA BACK LINK === */
+.page-back       { color: #1c2d62; }
+.page-back:hover { color: #2a4095; opacity: 1; }
+
+/* === BOEKKNOP TOPBAR === */
+.book-topbar button {
+  background: rgba(14,22,58,0.90);
+  border-color: rgba(185,138,32,0.32);
+}
+.book-topbar button:hover {
+  background: rgba(24,35,80,0.96);
+  border-color: rgba(210,162,46,0.72);
+}
+
+.page-btn {
+  background: rgba(14,22,58,0.85);
+  border-color: rgba(185,138,32,0.26);
+}
+.page-btn:hover {
+  background: rgba(24,35,80,0.92);
+  border-color: rgba(210,162,46,0.58);
+}
+
+/* === MOBILE === */
+@media (pointer: coarse) {
+  .daily-record-card::before { display: none; }
+}
