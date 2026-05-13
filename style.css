@@ -4078,6 +4078,18 @@ body {
   padding-top: clamp(1rem, 3vw, 3rem);
 }
 
+/* Chapter card: paginatelling rechtsboven i.p.v. overlap met knop */
+.chapter-card p {
+  position: absolute;
+  top: 1.6rem;
+  right: 2rem;
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.14rem;
+  text-align: right;
+  color: rgba(215,200,172,0.60);
+}
+
 /* ==========================================================
    LOG MODAL ACHTERGROND — BLURRY PERKAMENT
    Semi-transparant navy met blur i.p.v. bijna-zwart.
