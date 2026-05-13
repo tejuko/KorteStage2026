@@ -4080,7 +4080,7 @@ body {
 ========================================================== */
 
 .log-modal {
-  background: rgba(12, 18, 55, 0.72);
+  background: rgba(12, 18, 55, 0.45);
   backdrop-filter: blur(22px);
   -webkit-backdrop-filter: blur(22px);
   background-attachment: unset;
@@ -4088,7 +4088,7 @@ body {
 
 /* Modal backdrop ook bijgewerkt */
 .modal-backdrop {
-  background: rgba(12, 18, 55, 0.35);
+  background: rgba(12, 18, 55, 0.20);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
 }
