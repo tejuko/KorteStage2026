@@ -3933,3 +3933,80 @@ body {
 @media (pointer: coarse) {
   .daily-record-card::before { display: none; }
 }
+
+/* ==========================================================
+   BOEKOMSLAG AFWERKING
+   Verticale lijnen verwijderd. Ornamentele gouden binnenrand
+   op alle kaarten. Uitgesproken boekrug-schaduw links.
+========================================================== */
+
+/* identity-card & opdracht-card: verticale lijnen weg, inner frame erin */
+.identity-card::before,
+.opdracht-card::before {
+  inset: 9px;
+  border: 1px solid rgba(198,152,38,0.24);
+  border-radius: inherit;
+  background: none;
+}
+
+/* project-card: eigen ornamentele binnenrand */
+.project-card::before {
+  content: '';
+  position: absolute;
+  inset: 9px;
+  border: 1px solid rgba(198,152,38,0.24);
+  border-radius: inherit;
+  background: none;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* experiment-card: ornamentele binnenrand */
+.experiment-card::before {
+  content: '';
+  position: absolute;
+  inset: 9px;
+  border: 1px solid rgba(198,152,38,0.22);
+  border-radius: inherit;
+  background: none;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Alle kaarten: rijkere boekomslag achtergrond + uitgesproken boekrug links */
+.chapter-card,
+.daily-record-card,
+.project-card,
+.identity-card,
+.opdracht-card,
+.experiment-card,
+.artifact-card {
+  background:
+    radial-gradient(ellipse 55% 40% at 50% 0%, rgba(75,105,195,0.35) 0%, transparent 100%),
+    radial-gradient(ellipse at 0% 50%, rgba(0,0,20,0.55) 0%, transparent 28%),
+    radial-gradient(ellipse at 20% 18%, rgba(55,80,155,0.45) 0%, transparent 52%),
+    radial-gradient(ellipse at 80% 82%, rgba(6,12,42,0.38) 0%, transparent 48%),
+    linear-gradient(148deg, #2a3e80 0%, #1a2c62 38%, #122048 72%, #0c1838 100%);
+}
+
+/* Boekrug: uitgesproken linker schaduw + gouden lijntje */
+.chapter-card,
+.project-card,
+.identity-card,
+.opdracht-card,
+.experiment-card,
+.artifact-card {
+  box-shadow:
+    inset 10px 0 28px rgba(0,0,0,0.55),
+    inset 1px 0 0 rgba(198,152,38,0.18),
+    inset 0 1px 0 rgba(88,118,195,0.22),
+    0 14px 44px rgba(8,15,52,0.44);
+}
+
+.daily-record-card {
+  box-shadow:
+    inset 10px 0 28px rgba(0,0,0,0.55),
+    inset 1px 0 0 rgba(198,152,38,0.18),
+    inset 0 1px 0 rgba(88,118,195,0.22),
+    0 10px 34px rgba(8,15,52,0.40);
+}
