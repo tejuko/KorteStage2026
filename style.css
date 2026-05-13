@@ -4078,6 +4078,19 @@ body {
   padding-top: clamp(1rem, 3vw, 3rem);
 }
 
+/* Mobile: section margin + kleinere archief-titel die niet meer afgekapt wordt */
+@media (max-width: 700px) {
+  .section.active {
+    margin: 10px;
+  }
+
+  .archive-header h2,
+  .section-header h2 {
+    font-size: clamp(1.6rem, 10vw, 3rem);
+    word-break: break-word;
+  }
+}
+
 /* Chapter card: paginatelling rechtsboven i.p.v. overlap met knop */
 .chapter-card p {
   position: absolute;
