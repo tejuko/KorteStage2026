@@ -2799,3 +2799,210 @@ body {
   border-color: rgba(200,155,42,0.28);
   color: var(--accent);
 }
+
+/* ==========================================================
+   ATMOSFERISCHE LUCHT & BOEKOMSLAGEN
+   Lichter, warmer — als een verlichte archiefruimte
+========================================================== */
+
+/* Warme kaarslicht-lucht: goudgeel bovenaan, donker beneden */
+body {
+  background:
+    radial-gradient(ellipse 110% 55% at 50% -5%, rgba(220,162,44,0.52), transparent 68%),
+    radial-gradient(ellipse 60% 35% at 82% -3%,  rgba(188,118,28,0.28), transparent 60%),
+    radial-gradient(ellipse 60% 30% at 16% -2%,  rgba(168,104,20,0.22), transparent 58%),
+    radial-gradient(ellipse 45% 30% at 50% 20%,  rgba(175,110,24,0.1),  transparent 52%),
+    radial-gradient(circle at 10% 68%, rgba(138,84,10,0.09), transparent 42%),
+    linear-gradient(180deg,
+      #4a3214 0%,
+      #30200a 16%,
+      #1e1205 38%,
+      #100a02 62%,
+      #060401 100%);
+}
+
+/* Ambient glow: groter, feller — echte kaarslichtgloed */
+.ambient-glow {
+  width: 80rem;
+  height: 80rem;
+  top: -38rem;
+  right: -26rem;
+  background: radial-gradient(circle,
+    rgba(220,165,46,0.46),
+    rgba(148,90,8,0.12) 40%,
+    transparent 68%);
+  filter: blur(58px);
+}
+
+/* Particles: goudstof dat danst in het licht */
+.particle-field span {
+  background: rgba(232,186,64,0.58);
+  box-shadow: 0 0 16px rgba(232,186,64,0.82);
+}
+
+/* ===  CHAPTER CARDS: ECHTE BOEKOMSLAGEN === */
+
+.chapter-card {
+  background:
+    radial-gradient(ellipse at 88% 12%, rgba(185,132,38,0.3), transparent 45%),
+    radial-gradient(ellipse at 15% 85%, rgba(120,72,10,0.2), transparent 40%),
+    linear-gradient(158deg, #422510 0%, #2c1806 42%, #3a2008 100%);
+
+  border: 1px solid rgba(205,158,44,0.4);
+
+  box-shadow:
+    inset 5px 0 16px rgba(0,0,0,0.55),
+    inset -1px 0 4px rgba(205,158,44,0.05),
+    inset 0 -3px 10px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(230,185,75,0.18),
+    0 18px 55px rgba(0,0,0,0.6),
+    0 2px 0 rgba(205,158,44,0.2);
+}
+
+/* Inner frame: gouden boekomslagrand */
+.chapter-card::before {
+  content: '';
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(205,158,44,0.24);
+  border-radius: 30px;
+  pointer-events: none;
+  z-index: 0;
+  background: none;
+}
+
+.chapter-card:hover {
+  border-color: rgba(222,178,58,0.75);
+  box-shadow:
+    inset 5px 0 16px rgba(0,0,0,0.55),
+    0 30px 80px rgba(115,70,6,0.5),
+    0 0 0 1px rgba(222,178,58,0.2);
+  transform: translateY(-15px) rotateX(6deg) scale(1.02);
+}
+
+/* Chapter OPEN-knop als gouden gesp/slot */
+.chapter-card button {
+  background: linear-gradient(135deg, rgba(190,142,38,0.22), rgba(148,108,22,0.12));
+  border: 1px solid rgba(205,158,44,0.46);
+  font-family: 'Cinzel', serif;
+  font-size: 0.76rem;
+  letter-spacing: 0.22rem;
+  color: rgba(230,195,120,0.9);
+  transition: 0.3s ease;
+}
+
+.chapter-card button:hover {
+  background: rgba(190,142,38,0.3);
+  border-color: rgba(222,178,58,0.7);
+  color: #f5edd5;
+}
+
+/* Chapter nummer en titel bovenop de kaart-lagen */
+.chapter-card h3,
+.chapter-number {
+  position: relative;
+  z-index: 1;
+}
+
+.chapter-card p {
+  position: relative;
+  z-index: 1;
+  color: rgba(228,200,148,0.72);
+}
+
+/* === DAILY RECORD KAARTEN: KLEINE LEREN NOTITIEBOEKJES === */
+
+.daily-record-card {
+  background:
+    radial-gradient(ellipse at 92% 8%, rgba(180,130,32,0.22), transparent 40%),
+    linear-gradient(148deg, #321c06 0%, #1e1203 52%, #2c1806 100%);
+
+  border: 1px solid rgba(195,150,40,0.3);
+
+  box-shadow:
+    inset 4px 0 12px rgba(0,0,0,0.45),
+    inset 0 1px 0 rgba(210,165,50,0.12),
+    0 8px 28px rgba(0,0,0,0.45);
+}
+
+/* Boekrug rechts — als gesloten notitieboek */
+.daily-record-card::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 10%;
+  bottom: 10%;
+  width: 5px;
+  background: linear-gradient(180deg,
+    rgba(205,158,44,0.12),
+    rgba(205,158,44,0.38) 28%,
+    rgba(205,158,44,0.38) 72%,
+    rgba(205,158,44,0.12));
+  border-radius: 0 3px 3px 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.daily-record-card:hover,
+.daily-record-card:focus-visible {
+  border-color: rgba(218,172,52,0.7);
+  box-shadow:
+    inset 4px 0 12px rgba(0,0,0,0.45),
+    0 22px 62px rgba(95,58,4,0.38),
+    inset 0 1px 0 rgba(218,172,52,0.14);
+}
+
+/* === SECTIEKOPPEN HELDERDER === */
+
+.section-header h2,
+.archive-header h2,
+.page-intro h2 {
+  color: #f5edd5;
+  text-shadow: 0 2px 24px rgba(0,0,0,0.5);
+}
+
+.archive-label {
+  text-shadow: 0 0 22px rgba(212,168,50,0.5);
+  opacity: 0.95;
+}
+
+/* OVER MIJ kaarten: warmer en zichtbaarder */
+.identity-card,
+.project-card {
+  background:
+    linear-gradient(145deg, rgba(180,130,34,0.14), rgba(82,50,7,0.09)),
+    rgba(22,14,2,0.82);
+}
+
+/* Artifact card */
+.artifact-card {
+  background:
+    radial-gradient(ellipse at 85% 15%, rgba(180,132,35,0.2), transparent 42%),
+    linear-gradient(145deg, rgba(180,130,34,0.13), rgba(65,38,4,0.07)),
+    rgba(14,9,1,0.9);
+}
+
+/* Opdracht en experiment */
+.opdracht-card {
+  background:
+    linear-gradient(145deg, rgba(175,128,33,0.11), rgba(58,33,3,0.05)),
+    rgba(18,10,1,0.8);
+}
+
+.experiment-card {
+  background:
+    linear-gradient(160deg, rgba(175,128,33,0.1), rgba(55,31,3,0.04)),
+    rgba(16,9,1,0.78);
+}
+
+/* Book-topbar op donkere achtergrond */
+.book-topbar {
+  padding-top: 0.5rem;
+}
+
+/* Responsive: mobile kaarten ook als boekjes */
+@media (pointer: coarse) {
+  .daily-record-card::before {
+    display: none;
+  }
+}
