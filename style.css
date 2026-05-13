@@ -2041,3 +2041,234 @@ body.has-custom-cursor * {
     transform: translateY(0) scale(1);
   }
 }
+
+/* =========================
+   SUBPAGINA LAYOUT
+========================= */
+
+.page-layout {
+  width: min(1300px, 92%);
+  margin: 0 auto;
+  padding-bottom: 6rem;
+}
+
+.page-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-decoration: none;
+  margin-bottom: 3rem;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.page-back:hover {
+  opacity: 1;
+}
+
+.page-intro {
+  margin-bottom: 3rem;
+}
+
+.page-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-intro p {
+  color: var(--muted);
+}
+
+/* =========================
+   STAGEOPDRACHTEN
+========================= */
+
+.opdracht-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 480px), 1fr));
+  gap: 1.5rem;
+}
+
+.opdracht-card {
+  position: relative;
+  padding: 2rem;
+  border-radius: 24px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: linear-gradient(145deg, rgba(255,255,255,0.065), rgba(255,255,255,0.02));
+  overflow: hidden;
+  transition: border-color 0.32s ease, transform 0.32s ease, box-shadow 0.32s ease;
+}
+
+.opdracht-card:hover {
+  border-color: rgba(155,135,255,0.45);
+  transform: translateY(-5px);
+  box-shadow: 0 24px 64px rgba(61,43,140,0.22);
+}
+
+.opdracht-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(90deg, rgba(255,255,255,0.018) 0 1px, transparent 1px 68px);
+  pointer-events: none;
+}
+
+.opdracht-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.opdracht-client {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.22rem;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.opdracht-status {
+  flex-shrink: 0;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+}
+
+.status-afgerond {
+  background: rgba(100,220,130,0.12);
+  border: 1px solid rgba(100,220,130,0.28);
+  color: #80e09a;
+}
+
+.status-lopend {
+  background: rgba(155,135,255,0.12);
+  border: 1px solid rgba(155,135,255,0.3);
+  color: var(--accent);
+}
+
+.opdracht-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  color: white;
+}
+
+.opdracht-desc {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.opdracht-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.opdracht-tag {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.5);
+}
+
+/* =========================
+   EXPERIMENTEN & NOTITIES
+========================= */
+
+.experiment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: 1.25rem;
+}
+
+.experiment-card {
+  position: relative;
+  padding: 1.75rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: linear-gradient(160deg, rgba(255,255,255,0.06), rgba(255,255,255,0.015));
+  overflow: hidden;
+  transition: border-color 0.28s ease, transform 0.28s ease;
+}
+
+.experiment-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(155,135,255,0.7), transparent);
+  opacity: 0;
+  transition: opacity 0.28s ease;
+}
+
+.experiment-card:hover {
+  border-color: rgba(155,135,255,0.38);
+  transform: translateY(-4px);
+}
+
+.experiment-card:hover::after {
+  opacity: 1;
+}
+
+.experiment-date {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.18rem;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.experiment-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 0.65rem;
+  color: white;
+}
+
+.experiment-body {
+  font-size: 0.86rem;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.experiment-type {
+  display: inline-block;
+  margin-top: 1.1rem;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  background: rgba(155,135,255,0.1);
+  border: 1px solid rgba(155,135,255,0.22);
+  color: var(--accent);
+}
+
+@media (max-width: 700px) {
+  .opdracht-grid {
+    grid-template-columns: 1fr;
+  }
+}

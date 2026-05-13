@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stageopdrachten — Mijn Stage Verslag</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="noise"></div>
+  <div class="scanline-overlay" aria-hidden="true"></div>
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <div class="particle-field" id="particleField" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="hero">
+    <h1 class="title">STAGEOPDRACHTEN</h1>
+    <p class="subtitle">Projecten & opdrachten · Ranking Masters · 2026</p>
+  </header>
+
+  <main class="page-layout">
+
+    <a href="index.html" class="page-back">← Terug naar overzicht</a>
+
+    <div class="page-intro">
+      <h2>OPDRACHTEN</h2>
+      <p>Een overzicht van alle projecten en taken die ik heb uitgevoerd tijdens mijn stage bij Ranking Masters.</p>
+    </div>
+
+    <div class="opdracht-grid">
+
+      <!--
+        Voeg een nieuwe opdracht toe door dit blok te kopiëren:
+
+        <article class="opdracht-card">
+          <div class="opdracht-meta">
+            <span class="opdracht-client">Klantnaam</span>
+            <span class="opdracht-status status-afgerond">Afgerond</span>
+          </div>
+          <h2 class="opdracht-title">Projecttitel</h2>
+          <p class="opdracht-desc">Beschrijving van de opdracht.</p>
+          <div class="opdracht-tags">
+            <span class="opdracht-tag">Tag</span>
+          </div>
+        </article>
+
+        Gebruik status-afgerond of status-lopend als class.
+      -->
+
+      <article class="opdracht-card">
+        <div class="opdracht-meta">
+          <span class="opdracht-client">Sabé Verpakkingen</span>
+          <span class="opdracht-status status-afgerond">Afgerond</span>
+        </div>
+        <h2 class="opdracht-title">WordPress Menu & Sitemap</h2>
+        <p class="opdracht-desc">
+          Onderzoek en oplossing voor verdwijnende navigatielinks naast de "Ons assortiment" dropdown.
+          Daarnaast lastmod-datums toegevoegd aan subcategoriepagina's in de sitemap voor betere SEO-indexering.
+        </p>
+        <div class="opdracht-tags">
+          <span class="opdracht-tag">WordPress</span>
+          <span class="opdracht-tag">PHP</span>
+          <span class="opdracht-tag">SEO</span>
+          <span class="opdracht-tag">Yoast</span>
+        </div>
+      </article>
+
+      <article class="opdracht-card">
+        <div class="opdracht-meta">
+          <span class="opdracht-client">Intern project</span>
+          <span class="opdracht-status status-afgerond">Afgerond</span>
+        </div>
+        <h2 class="opdracht-title">Barbie ACF Project</h2>
+        <p class="opdracht-desc">
+          Custom post type architectuur opgezet met Advanced Custom Fields. Relationship systems en een
+          thematisch WordPress archief gebouwd als verdiepingsopdracht in WordPress-development.
+        </p>
+        <div class="opdracht-tags">
+          <span class="opdracht-tag">WordPress</span>
+          <span class="opdracht-tag">ACF</span>
+          <span class="opdracht-tag">PHP</span>
+          <span class="opdracht-tag">Custom CPT</span>
+        </div>
+      </article>
+
+      <article class="opdracht-card">
+        <div class="opdracht-meta">
+          <span class="opdracht-client">Klant</span>
+          <span class="opdracht-status status-afgerond">Afgerond</span>
+        </div>
+        <h2 class="opdracht-title">SEO Landingspagina</h2>
+        <p class="opdracht-desc">
+          Figma-ontwerp volledig omgezet naar een WordPress-pagina via Bricks Builder.
+          Van wireframe tot live implementatie — inclusief responsive aanpassingen en SEO-structuur.
+        </p>
+        <div class="opdracht-tags">
+          <span class="opdracht-tag">Figma</span>
+          <span class="opdracht-tag">Bricks Builder</span>
+          <span class="opdracht-tag">WordPress</span>
+          <span class="opdracht-tag">SEO</span>
+        </div>
+      </article>
+
+      <article class="opdracht-card">
+        <div class="opdracht-meta">
+          <span class="opdracht-client">Sabé Verpakkingen</span>
+          <span class="opdracht-status status-afgerond">Afgerond</span>
+        </div>
+        <h2 class="opdracht-title">Intern Linkplan</h2>
+        <p class="opdracht-desc">
+          Grootschalige implementatie van interne links op de website van Sabé Verpakkingen.
+          Inclusief procesverbeteringen, werkdocumentatie en afstemming met het team.
+        </p>
+        <div class="opdracht-tags">
+          <span class="opdracht-tag">SEO</span>
+          <span class="opdracht-tag">WordPress</span>
+          <span class="opdracht-tag">Contentstrategie</span>
+        </div>
+      </article>
+
+    </div>
+
+  </main>
+
+  <script type="module">
+    import { initCinematicEffects } from './effectsSystem.js'
+    initCinematicEffects()
+  </script>
+
+</body>
+</html>

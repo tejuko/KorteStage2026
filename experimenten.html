@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experimenten & Notities — Mijn Stage Verslag</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="noise"></div>
+  <div class="scanline-overlay" aria-hidden="true"></div>
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <div class="particle-field" id="particleField" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="hero">
+    <h1 class="title">EXPERIMENTEN</h1>
+    <p class="subtitle">Losse vondsten · Ontwerpstudies · Technische notities</p>
+  </header>
+
+  <main class="page-layout">
+
+    <a href="index.html" class="page-back">← Terug naar overzicht</a>
+
+    <div class="page-intro">
+      <h2>LAB NOTITIES</h2>
+      <p>Experimenten, ontdekkingen en technische notities uit mijn stageperiode. Dingen die ik heb uitgeprobeerd, geleerd of ontdekt buiten de vaste opdrachten.</p>
+    </div>
+
+    <div class="experiment-grid">
+
+      <!--
+        Voeg een nieuwe notitie toe door dit blok te kopiëren:
+
+        <article class="experiment-card">
+          <p class="experiment-date">2026-05 · Notitie</p>
+          <h2 class="experiment-title">Titel</h2>
+          <p class="experiment-body">Beschrijving van het experiment of de notitie.</p>
+          <span class="experiment-type">Notitie</span>
+        </article>
+
+        Mogelijke types: Experiment · Notitie · Ontwerp · Technisch · Reflectie
+      -->
+
+      <article class="experiment-card">
+        <p class="experiment-date">2026-04 · Experiment</p>
+        <h2 class="experiment-title">Titel van experiment</h2>
+        <p class="experiment-body">
+          Beschrijf hier wat je hebt onderzocht of geprobeerd. Wat werkte wel, wat niet?
+          Wat heb je hiervan geleerd?
+        </p>
+        <span class="experiment-type">Experiment</span>
+      </article>
+
+      <article class="experiment-card">
+        <p class="experiment-date">2026-04 · Notitie</p>
+        <h2 class="experiment-title">Titel van een notitie</h2>
+        <p class="experiment-body">
+          Schrijf hier een inzicht of observatie. Dit kan een les zijn die je hebt geleerd,
+          iets dat je verraste, of een technische ontdekking.
+        </p>
+        <span class="experiment-type">Notitie</span>
+      </article>
+
+      <article class="experiment-card">
+        <p class="experiment-date">2026-05 · Ontwerpstudie</p>
+        <h2 class="experiment-title">Titel van een ontwerpstudie</h2>
+        <p class="experiment-body">
+          Beschrijf je ontwerpstudie of prototype. Wat was het doel?
+          Welke keuzes heb je gemaakt en waarom?
+        </p>
+        <span class="experiment-type">Ontwerp</span>
+      </article>
+
+      <article class="experiment-card">
+        <p class="experiment-date">2026-05 · Technisch</p>
+        <h2 class="experiment-title">Technische bevinding</h2>
+        <p class="experiment-body">
+          Een technische ontdekking of oplossing. Dit kan een code-snippet zijn,
+          een nieuwe tool die je hebt ontdekt, of een probleem dat je creatief hebt opgelost.
+        </p>
+        <span class="experiment-type">Technisch</span>
+      </article>
+
+      <article class="experiment-card">
+        <p class="experiment-date">2026-05 · Reflectie</p>
+        <h2 class="experiment-title">Reflectie op een moment</h2>
+        <p class="experiment-body">
+          Beschrijf een moment of situatie waarover je hebt nagedacht. Wat ging er goed,
+          wat zou je anders doen? Hoe heeft dit je aanpak veranderd?
+        </p>
+        <span class="experiment-type">Reflectie</span>
+      </article>
+
+      <article class="experiment-card">
+        <p class="experiment-date">2026-05 · Experiment</p>
+        <h2 class="experiment-title">Nog een experiment</h2>
+        <p class="experiment-body">
+          Ruimte voor een extra experiment of vondst. Kopieer dit blok om meer toe te voegen.
+        </p>
+        <span class="experiment-type">Experiment</span>
+      </article>
+
+    </div>
+
+  </main>
+
+  <script type="module">
+    import { initCinematicEffects } from './effectsSystem.js'
+    initCinematicEffects()
+  </script>
+
+</body>
+</html>
