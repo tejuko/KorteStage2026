@@ -550,7 +550,7 @@ main {
 
 .archive-header h2 {
 
-  font-size: clamp(4rem, 8vw, 7rem);
+  font-size: 3rem;
 
   margin-bottom: 1rem;
 
@@ -2046,6 +2046,11 @@ body.has-custom-cursor * {
    SUBPAGINA LAYOUT
 ========================= */
 
+.page-title {
+  font-size: clamp(1.75rem, 6vw, 4.5rem);
+  letter-spacing: 0.08rem;
+}
+
 .page-layout {
   width: min(1300px, 92%);
   margin: 0 auto;
@@ -2268,7 +2273,16 @@ body.has-custom-cursor * {
 }
 
 @media (max-width: 700px) {
-  .opdracht-grid {
+  .opdracht-grid,
+  .experiment-grid {
     grid-template-columns: 1fr;
+  }
+
+  .page-intro h2 {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+  }
+
+  .page-back {
+    margin-bottom: 2rem;
   }
 }
