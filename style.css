@@ -2297,3 +2297,108 @@ body.has-custom-cursor * {
     margin-bottom: 2rem;
   }
 }
+
+/* =========================
+   PERKAMENT PAGINA STIJL
+========================= */
+
+.book-page-v2,
+.modal-page {
+  background:
+    radial-gradient(ellipse at center, transparent 52%, rgba(90,55,10,0.35) 100%),
+    radial-gradient(ellipse at 18% 22%, rgba(255,235,170,0.55) 0%, transparent 48%),
+    radial-gradient(ellipse at 82% 78%, rgba(195,148,68,0.38) 0%, transparent 48%),
+    radial-gradient(ellipse at 50% 5%, rgba(240,210,130,0.3) 0%, transparent 35%),
+    linear-gradient(155deg, #f4e4b2 0%, #e8d090 30%, #f0dfa8 60%, #e2c87a 100%);
+
+  color: #2c1a06;
+  border: 1px solid rgba(140,100,28,0.45);
+
+  box-shadow:
+    0 50px 120px rgba(0,0,0,0.75),
+    0 0 0 1px rgba(201,168,76,0.12),
+    inset 0 0 120px rgba(160,110,20,0.07),
+    inset 0 2px 0 rgba(255,248,220,0.6);
+}
+
+.book-page-v2::after,
+.modal-page::after {
+  background:
+    linear-gradient(90deg, rgba(0,0,0,0.18), transparent 10%, transparent 90%, rgba(0,0,0,0.12)),
+    repeating-linear-gradient(0deg, transparent 0 26px, rgba(120,80,20,0.1) 26px 27px);
+}
+
+.book-page-v2 .modal-page-meta,
+.modal-page .modal-page-meta {
+  color: rgba(110,65,14,0.72);
+  border-bottom: 1px solid rgba(140,100,28,0.25);
+  padding-bottom: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.book-page-v2 .markdown-page p,
+.book-page-v2 .markdown-page li,
+.book-page-v2 .page-content p,
+.book-page-v2 .page-content li,
+.modal-page .markdown-page p,
+.modal-page .markdown-page li {
+  color: #2c1a06;
+}
+
+.book-page-v2 .markdown-page h1,
+.book-page-v2 .page-content h1,
+.modal-page .markdown-page h1 {
+  background: linear-gradient(90deg, #1a0d02, #8a5010);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  filter: none;
+}
+
+.book-page-v2 .markdown-page h2,
+.book-page-v2 .page-content h2,
+.modal-page .markdown-page h2 {
+  color: #7a4a0e;
+}
+
+.book-page-v2 .markdown-page h3,
+.book-page-v2 .page-content h3,
+.modal-page .markdown-page h3 {
+  color: #5a3808;
+}
+
+.book-page-v2 .markdown-page strong,
+.modal-page .markdown-page strong {
+  color: #1a0d02;
+}
+
+.book-page-v2 .markdown-page blockquote,
+.modal-page .markdown-page blockquote {
+  border-left-color: rgba(140,95,25,0.5);
+  color: rgba(55,30,6,0.78);
+}
+
+.book-page-v2 .markdown-page code,
+.modal-page .markdown-page code {
+  background: rgba(0,0,0,0.07);
+  color: #5a3808;
+}
+
+.book-page-v2 .markdown-page ul,
+.modal-page .markdown-page ul {
+  color: #2c1a06;
+}
+
+.log-modal {
+  background:
+    radial-gradient(circle at 50% 10%, rgba(201,168,76,0.06), transparent 40rem),
+    linear-gradient(180deg, rgba(10,6,2,0.97), rgba(5,3,1,0.97));
+}
+
+/* Paginaknoppen en topbar contrasteren met perkament */
+.book-page-v2 ~ .book-topbar button,
+.book-topbar button {
+  background: rgba(20,12,3,0.6);
+  border-color: rgba(201,168,76,0.22);
+}
