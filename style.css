@@ -3006,3 +3006,287 @@ body {
     display: none;
   }
 }
+
+/* ==========================================================
+   WARME ARCHIEF-ATMOSFEER — VEEL LICHTER
+   Geïnspireerd op de Pinterest mood board: rijke warme amber,
+   zichtbaar leer, goud dat echt gloeit.
+========================================================== */
+
+/* Nieuwe basis kleuren — veel warmer en lichter */
+:root {
+  --muted: rgba(238,212,162,0.75);
+  --text:  #f8f0dc;
+}
+
+/* Achtergrond: echte warme kaarsluchtatmosfeer */
+body {
+  background:
+    radial-gradient(ellipse 130% 65% at 50% -4%, rgba(232,168,46,0.78), transparent 72%),
+    radial-gradient(ellipse 72% 44% at 86% -5%,  rgba(198,128,32,0.42), transparent 65%),
+    radial-gradient(ellipse 72% 38% at 12% -4%,  rgba(178,112,24,0.36), transparent 62%),
+    radial-gradient(ellipse 95% 55% at 50% 30%,  rgba(162,104,20,0.22), transparent 68%),
+    linear-gradient(180deg,
+      #8a5e1e 0%,
+      #5e3c12 14%,
+      #3a2408 30%,
+      #221608 48%,
+      #120c04 68%,
+      #080502 100%);
+}
+
+/* Ambient glow: enorm en stralend — als open haard */
+.ambient-glow {
+  width: 96rem;
+  height: 96rem;
+  top: -46rem;
+  right: -30rem;
+  background: radial-gradient(circle,
+    rgba(232,172,50,0.58),
+    rgba(158,98,12,0.16) 40%,
+    transparent 68%);
+  filter: blur(66px);
+}
+
+/* Particles: heldere goudstofdeeltjes */
+.particle-field span {
+  background: rgba(242,196,72,0.68);
+  box-shadow: 0 0 20px rgba(242,196,72,0.9);
+}
+
+/* Scanline: nauwelijks zichtbaar */
+.scanline-overlay {
+  opacity: 0.08;
+}
+
+/* === CHAPTER CARDS: ECHTE RIJKE LEREN BOEKOMSLAGEN === */
+/* Zichtbaar warm bruin/amber leer — niet bijna-zwart */
+
+.chapter-card {
+  background:
+    radial-gradient(ellipse at 86% 10%, rgba(215,162,50,0.48), transparent 46%),
+    radial-gradient(ellipse at 10% 90%, rgba(135,82,14,0.26), transparent 44%),
+    linear-gradient(162deg, #7a4820 0%, #542e0e 40%, #6e421c 100%);
+
+  border: 1px solid rgba(215,165,50,0.5);
+
+  box-shadow:
+    inset 7px 0 20px rgba(0,0,0,0.5),
+    inset 0 1px 0 rgba(242,198,72,0.3),
+    0 22px 65px rgba(0,0,0,0.5),
+    0 2px 0 rgba(215,165,50,0.28);
+}
+
+.chapter-card::before {
+  border-color: rgba(215,165,50,0.28);
+}
+
+.chapter-card:hover {
+  border-color: rgba(235,188,65,0.85);
+  box-shadow:
+    inset 7px 0 20px rgba(0,0,0,0.5),
+    0 36px 95px rgba(128,80,10,0.58),
+    0 0 0 1px rgba(235,188,65,0.28);
+  transform: translateY(-16px) rotateX(6deg) scale(1.02);
+}
+
+.chapter-card p {
+  color: rgba(235,205,152,0.78);
+}
+
+.chapter-card h3 {
+  color: #f8f0dc;
+}
+
+.chapter-number {
+  color: rgba(235,188,65,0.9);
+  text-shadow: 0 0 16px rgba(215,165,50,0.5);
+}
+
+.chapter-card button {
+  background: linear-gradient(135deg, rgba(198,148,40,0.28), rgba(155,112,24,0.16));
+  border-color: rgba(215,165,50,0.5);
+  color: rgba(238,205,132,0.95);
+}
+
+.chapter-glow {
+  background: radial-gradient(circle,
+    rgba(215,165,50,0.32),
+    transparent 70%);
+}
+
+/* === DAILY RECORDS: ZICHTBARE LEREN NOTITIEBOEKJES === */
+
+.daily-record-card {
+  background:
+    radial-gradient(ellipse at 95% 8%, rgba(205,155,44,0.35), transparent 44%),
+    linear-gradient(150deg, #663c14 0%, #422808 50%, #5a3412 100%);
+
+  border: 1px solid rgba(205,158,44,0.38);
+
+  box-shadow:
+    inset 5px 0 15px rgba(0,0,0,0.45),
+    inset 0 1px 0 rgba(225,178,56,0.2),
+    0 10px 35px rgba(0,0,0,0.4);
+}
+
+.daily-record-card:hover,
+.daily-record-card:focus-visible {
+  border-color: rgba(228,182,58,0.78);
+  box-shadow:
+    inset 5px 0 15px rgba(0,0,0,0.45),
+    0 26px 70px rgba(108,68,8,0.46),
+    inset 0 1px 0 rgba(228,182,58,0.24);
+}
+
+.daily-record-card h3 {
+  color: #f8f0dc;
+}
+
+.record-date {
+  color: rgba(232,188,65,0.92);
+  text-shadow: 0 0 12px rgba(215,165,50,0.4);
+}
+
+.record-code {
+  color: rgba(215,185,120,0.55);
+}
+
+/* Boekrug rechts */
+.daily-record-card::before {
+  background: linear-gradient(180deg,
+    rgba(215,165,50,0.18),
+    rgba(215,165,50,0.45) 28%,
+    rgba(215,165,50,0.45) 72%,
+    rgba(215,165,50,0.18));
+}
+
+/* === OVER MIJ / PROJECT KAARTEN === */
+
+.project-card,
+.identity-card {
+  background:
+    linear-gradient(145deg, rgba(205,152,42,0.17), rgba(112,68,14,0.11)),
+    rgba(58,36,10,0.9);
+  border: 1px solid rgba(205,155,42,0.28);
+}
+
+.project-card:hover,
+.identity-card:hover {
+  border-color: rgba(228,182,58,0.76);
+  box-shadow:
+    0 28px 80px rgba(120,76,10,0.48),
+    0 0 0 1px rgba(228,182,58,0.2);
+}
+
+.identity-card::before {
+  background:
+    linear-gradient(180deg, rgba(215,165,50,0.08), transparent 38%),
+    repeating-linear-gradient(90deg, rgba(215,165,50,0.05) 0 1px, transparent 1px 68px);
+}
+
+.identity-card span {
+  color: rgba(232,188,65,0.92);
+  text-shadow: 0 0 14px rgba(215,165,50,0.35);
+}
+
+.identity-card h3 {
+  color: #f8f0dc;
+}
+
+.identity-card p {
+  color: var(--muted);
+}
+
+/* Glow overlays warm goud */
+.project-card::after,
+.chapter-card::after,
+.artifact-card::after,
+.daily-record-card::after {
+  background:
+    radial-gradient(circle at var(--glow-x, 80%) var(--glow-y, 15%), rgba(222,178,56,0.25), transparent 36%),
+    linear-gradient(120deg, transparent, rgba(255,230,140,0.05), transparent);
+}
+
+/* === OPDRACHT EN EXPERIMENT === */
+
+.opdracht-card {
+  background:
+    linear-gradient(145deg, rgba(200,152,40,0.15), rgba(72,42,6,0.08)),
+    rgba(50,32,8,0.88);
+  border-color: rgba(200,152,40,0.26);
+}
+
+.opdracht-card:hover {
+  border-color: rgba(225,178,55,0.55);
+  box-shadow: 0 22px 60px rgba(105,65,8,0.32);
+}
+
+.experiment-card {
+  background:
+    linear-gradient(160deg, rgba(198,150,38,0.14), rgba(68,40,5,0.07)),
+    rgba(48,30,7,0.86);
+  border-color: rgba(198,150,38,0.24);
+}
+
+.experiment-card:hover {
+  border-color: rgba(225,178,55,0.48);
+}
+
+/* === ARTIFACT === */
+
+.artifact-card {
+  background:
+    radial-gradient(ellipse at 84% 14%, rgba(205,158,44,0.3), transparent 46%),
+    linear-gradient(145deg, rgba(200,152,40,0.17), rgba(68,42,6,0.09)),
+    rgba(52,34,8,0.92);
+  border-color: rgba(205,158,44,0.32);
+}
+
+/* === NAV KNOPPEN === */
+
+.top-nav button {
+  background: rgba(58,36,10,0.82);
+  border-color: rgba(205,158,44,0.32);
+  color: var(--text);
+}
+
+.top-nav button:hover {
+  background: rgba(185,138,34,0.2);
+  border-color: var(--accent);
+}
+
+/* === ARCHIVE LABELS === */
+
+.archive-label {
+  color: rgba(232,188,65,0.95);
+  text-shadow: 0 0 24px rgba(215,165,50,0.55);
+}
+
+.section-header p,
+.archive-description,
+.page-intro p {
+  color: rgba(235,210,162,0.76);
+}
+
+/* === BOEKKNOP TOPBAR === */
+
+.book-topbar button {
+  background: rgba(52,34,8,0.85);
+  border-color: rgba(200,155,44,0.3);
+}
+
+.book-topbar button:hover {
+  background: rgba(170,122,24,0.2);
+  border-color: rgba(218,175,52,0.75);
+}
+
+.page-btn {
+  background: rgba(52,34,8,0.8);
+  border-color: rgba(200,155,44,0.24);
+}
+
+.page-btn:hover {
+  background: rgba(170,122,24,0.18);
+  border-color: rgba(218,175,52,0.6);
+}
