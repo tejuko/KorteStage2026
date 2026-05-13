@@ -3006,12 +3006,13 @@ body {
     display: none;
   }
 }
+*/
 
 /* ==========================================================
-   WARME ARCHIEF-ATMOSFEER — VEEL LICHTER
-   Geïnspireerd op de Pinterest mood board: rijke warme amber,
-   zichtbaar leer, goud dat echt gloeit.
+   WARME ARCHIEF-ATMOSFEER — VERVANGEN DOOR IVOOR VERSIE
+   (zie blok hieronder)
 ========================================================== */
+/*
 
 /* Nieuwe basis kleuren — veel warmer en lichter */
 :root {
@@ -3289,4 +3290,329 @@ body {
 .page-btn:hover {
   background: rgba(170,122,24,0.18);
   border-color: rgba(218,175,52,0.6);
+}
+
+/* ==========================================================
+   IVOOR & GOUD — ALLE TILES ALS PERKAMENT
+   Kaarten: crème/ivoor met donkere sepia tekst en goud beslag.
+   Achtergrond: warm donker chocolade voor contrast.
+   Geïnspireerd op het witte boek met goud ornament.
+   Perkamentpagina's: ONAANGEPAST.
+========================================================== */
+
+/* Achtergrond: warm donker espresso, niet zwart */
+body {
+  background:
+    radial-gradient(ellipse 100% 52% at 50% -5%, rgba(205,152,40,0.50), transparent 68%),
+    radial-gradient(ellipse 60% 36% at 84% -4%,  rgba(168,118,26,0.28), transparent 62%),
+    radial-gradient(ellipse 60% 30% at 14% -4%,  rgba(152,108,20,0.24), transparent 60%),
+    linear-gradient(180deg,
+      #3c2810 0%,
+      #241808 20%,
+      #160e05 40%,
+      #0e0903 65%,
+      #070502 100%);
+}
+
+/* Titel: helder wit-naar-goud met schaduw voor leesbaarheid */
+.title {
+  background: linear-gradient(140deg, #ffffff 0%, #fce48a 40%, #e4aa28 72%, #c07e10 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  filter: drop-shadow(0 4px 28px rgba(0,0,0,0.7));
+}
+
+@keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 4px 28px rgba(0,0,0,0.7)) drop-shadow(0 0 14px rgba(205,152,40,0.5));
+  }
+  50% {
+    filter: drop-shadow(0 4px 28px rgba(0,0,0,0.7)) drop-shadow(0 0 38px rgba(205,152,40,0.9));
+  }
+}
+
+/* Subtitle */
+.subtitle {
+  color: rgba(235,215,165,0.72);
+}
+
+/* Ambient glow: warm kaarslicht van boven */
+.ambient-glow {
+  width: 82rem;
+  height: 82rem;
+  top: -40rem;
+  right: -28rem;
+  background: radial-gradient(circle,
+    rgba(218,162,45,0.50),
+    rgba(148,90,10,0.14) 40%,
+    transparent 68%);
+  filter: blur(60px);
+}
+
+/* Particles: goudstof */
+.particle-field span {
+  background: rgba(238,192,68,0.65);
+  box-shadow: 0 0 18px rgba(238,192,68,0.88);
+}
+
+/* Scanline: bijna onzichtbaar */
+.scanline-overlay { opacity: 0.08; }
+
+/* === ALLE KAARTEN: IVOOR / CRÈME MET GOUD === */
+
+.chapter-card,
+.daily-record-card,
+.project-card,
+.identity-card,
+.opdracht-card,
+.experiment-card,
+.artifact-card {
+  background:
+    radial-gradient(ellipse at center, transparent 62%, rgba(60,35,6,0.16) 100%),
+    radial-gradient(ellipse at 12% 14%, rgba(255,255,250,0.6) 0%, transparent 44%),
+    linear-gradient(148deg, #faf4e6 0%, #f0e5cb 32%, #f6eed8 64%, #e9dabb 100%);
+
+  color: #231505;
+  border: 1px solid rgba(158,115,28,0.36);
+}
+
+/* Basis hover */
+.chapter-card:hover,
+.project-card:hover,
+.identity-card:hover,
+.artifact-card:hover,
+.opdracht-card:hover,
+.experiment-card:hover {
+  border-color: rgba(185,138,32,0.7);
+  box-shadow:
+    0 28px 72px rgba(0,0,0,0.42),
+    0 0 0 1px rgba(185,138,32,0.18),
+    inset 0 1px 0 rgba(255,252,238,0.95);
+}
+
+/* Glow overlay op ivoor: subtiel warm goud */
+.project-card::after,
+.chapter-card::after,
+.artifact-card::after,
+.daily-record-card::after {
+  background:
+    radial-gradient(circle at var(--glow-x, 80%) var(--glow-y, 15%), rgba(155,108,22,0.14), transparent 36%),
+    linear-gradient(120deg, transparent, rgba(200,160,60,0.05), transparent);
+}
+
+/* === CHAPTER CARDS: IVOOR BOEKOMSLAGEN === */
+
+.chapter-card {
+  box-shadow:
+    inset 6px 0 18px rgba(0,0,0,0.12),
+    inset 0 1px 0 rgba(255,252,240,0.95),
+    0 16px 52px rgba(0,0,0,0.32),
+    0 2px 0 rgba(175,130,30,0.22);
+}
+
+.chapter-card:hover {
+  transform: translateY(-16px) rotateX(6deg) scale(1.02);
+  box-shadow:
+    inset 6px 0 18px rgba(0,0,0,0.12),
+    0 36px 90px rgba(0,0,0,0.45),
+    0 0 0 1px rgba(198,150,38,0.26),
+    inset 0 1px 0 rgba(255,252,240,0.95);
+}
+
+/* Ornamentele binnenkader — goud op ivoor */
+.chapter-card::before {
+  border-color: rgba(155,110,26,0.22);
+}
+
+.chapter-card h3   { color: #1e1003; }
+.chapter-card p    { color: rgba(52,30,6,0.68); }
+.chapter-number    { color: #8a5c0e; text-shadow: none; }
+
+.chapter-card button {
+  background: rgba(148,105,22,0.1);
+  border: 1px solid rgba(155,112,26,0.38);
+  color: #7a500c;
+  font-family: 'Cinzel', serif;
+  font-size: 0.76rem;
+  letter-spacing: 0.22rem;
+}
+.chapter-card button:hover {
+  background: rgba(148,105,22,0.2);
+  border-color: rgba(175,130,30,0.6);
+  color: #5c3c08;
+}
+
+.chapter-glow {
+  background: radial-gradient(circle, rgba(175,130,30,0.2), transparent 70%);
+}
+
+/* === DAILY RECORD KAARTEN: IVOOR NOTITIEBOEKJES === */
+
+.daily-record-card {
+  box-shadow:
+    inset 4px 0 12px rgba(0,0,0,0.1),
+    inset 0 1px 0 rgba(255,252,240,0.9),
+    0 8px 26px rgba(0,0,0,0.24);
+}
+
+.daily-record-card:hover,
+.daily-record-card:focus-visible {
+  border-color: rgba(175,130,30,0.68);
+  box-shadow:
+    inset 4px 0 12px rgba(0,0,0,0.1),
+    0 24px 64px rgba(0,0,0,0.38),
+    inset 0 1px 0 rgba(255,252,240,0.9);
+}
+
+/* Boekrug rechts: goud op ivoor */
+.daily-record-card::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 10%;
+  bottom: 10%;
+  width: 5px;
+  background: linear-gradient(180deg,
+    rgba(155,110,26,0.15),
+    rgba(155,110,26,0.42) 28%,
+    rgba(155,110,26,0.42) 72%,
+    rgba(155,110,26,0.15));
+  border-radius: 0 3px 3px 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.daily-record-card h3  { color: #1e1003; }
+.record-date           { color: #8a5c0e; text-shadow: none; }
+.record-code           { color: rgba(75,46,10,0.42); }
+
+.record-scan {
+  background: linear-gradient(180deg, transparent, rgba(155,110,26,0.1), transparent);
+}
+
+/* === IDENTITY / OVER MIJ KAARTEN === */
+
+.identity-card::before {
+  background:
+    linear-gradient(180deg, rgba(150,105,22,0.06), transparent 38%),
+    repeating-linear-gradient(90deg, rgba(110,75,18,0.05) 0 1px, transparent 1px 68px);
+}
+
+.identity-card span { color: #8a5c0e; text-shadow: none; }
+.identity-card h3   { color: #1e1003; }
+.identity-card p    { color: rgba(52,30,6,0.70); }
+
+/* === OPDRACHT KAARTEN === */
+
+.opdracht-card {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+}
+
+.opdracht-card::before {
+  background: repeating-linear-gradient(90deg, rgba(110,75,18,0.06) 0 1px, transparent 1px 68px);
+}
+
+.opdracht-title  { color: #1a0d02; }
+.opdracht-desc   { color: rgba(52,30,6,0.72); }
+.opdracht-client { color: #8a5c0e; }
+
+.opdracht-tag {
+  background: rgba(140,98,20,0.1);
+  border-color: rgba(140,98,20,0.24);
+  color: #6e4c0c;
+}
+
+.status-afgerond {
+  background: rgba(50,130,70,0.1);
+  border-color: rgba(50,130,70,0.24);
+  color: #2a6e3a;
+}
+
+.status-lopend {
+  background: rgba(140,98,20,0.1);
+  border-color: rgba(140,98,20,0.24);
+  color: #7a5010;
+}
+
+/* === EXPERIMENT KAARTEN === */
+
+.experiment-card::after {
+  background: linear-gradient(90deg, transparent, rgba(175,130,30,0.5), transparent);
+}
+
+.experiment-title  { color: #1a0d02; }
+.experiment-body   { color: rgba(52,30,6,0.72); }
+.experiment-date   { color: #8a5c0e; }
+
+.experiment-type {
+  background: rgba(140,98,20,0.1);
+  border-color: rgba(140,98,20,0.22);
+  color: #6e4c0c;
+}
+
+/* === ARTIFACT KAART === */
+
+.artifact-card {
+  box-shadow:
+    0 24px 70px rgba(0,0,0,0.35),
+    inset 0 1px 0 rgba(255,252,240,0.92);
+}
+
+.artifact-card h2  { color: #1e1003; }
+.artifact-card p   { color: rgba(52,30,6,0.70); }
+.artifact-card span { color: #8a5c0e; }
+
+.artifact-card::before {
+  color: rgba(90,58,10,0.4);
+}
+.artifact-card.is-downloading::before {
+  color: rgba(90,58,10,0.7);
+}
+
+/* === NAV KNOPPEN === */
+
+.top-nav button {
+  background: rgba(38,24,6,0.82);
+  border-color: rgba(185,138,32,0.32);
+  color: var(--text);
+  backdrop-filter: blur(12px);
+}
+.top-nav button:hover {
+  background: rgba(58,36,8,0.9);
+  border-color: rgba(205,158,42,0.65);
+}
+
+/* === ARCHIVE LABELS (op donkere achtergrond) === */
+
+.archive-label      { color: rgba(228,185,62,0.95); text-shadow: 0 0 22px rgba(205,158,42,0.5); }
+.section-header p,
+.archive-description,
+.page-intro p       { color: rgba(232,208,158,0.74); }
+
+/* === SUBPAGINA BACK LINK === */
+.page-back          { color: #c9a030; }
+.page-back:hover    { opacity: 1; color: #e4b840; }
+
+/* === BOEKKNOP TOPBAR === */
+.book-topbar button {
+  background: rgba(30,18,4,0.82);
+  border-color: rgba(185,138,32,0.28);
+}
+.book-topbar button:hover {
+  background: rgba(52,32,6,0.9);
+  border-color: rgba(210,162,46,0.72);
+}
+
+.page-btn {
+  background: rgba(30,18,4,0.78);
+  border-color: rgba(185,138,32,0.22);
+}
+.page-btn:hover {
+  background: rgba(52,32,6,0.88);
+  border-color: rgba(210,162,46,0.58);
+}
+
+/* === MOBILE: boekrug verbergen op touch === */
+@media (pointer: coarse) {
+  .daily-record-card::before { display: none; }
 }
