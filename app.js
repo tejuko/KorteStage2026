@@ -130,7 +130,7 @@ async function loadMarkdownLog(filename, direction = 'next', animate = true) {
   `
 
   dailyPageIndicator.textContent =
-    `PAGE ${currentDailyIndex + 1} / ${dailyLogs.length}`
+    `PAGINA ${currentDailyIndex + 1} / ${dailyLogs.length}`
 
   if (animate) {
     animatePageEnter(dailyPage, direction)
@@ -310,7 +310,7 @@ const archiveData = [
 
   {
     week: 'WEEK 16',
-    title: 'The Beginning',
+    title: 'De Start',
     reflection: '2026-W16.md',
 
     days: [
@@ -324,7 +324,7 @@ const archiveData = [
 
   {
     week: 'WEEK 17',
-    title: 'ACF Evolution',
+    title: 'ACF & WordPress',
     reflection: '2026-W17.md',
 
     days: [
@@ -338,7 +338,7 @@ const archiveData = [
 
   {
     week: 'WEEK 18',
-    title: 'Design Before Build',
+    title: 'Ontwerpen voor Bouwen',
     reflection: '2026-W18.md',
 
     days: [
@@ -351,7 +351,7 @@ const archiveData = [
 
   {
     week: 'WEEK 19',
-    title: 'Production Rhythm',
+    title: 'Productieritme',
     reflection: '2026-W19.md',
 
     days: [
@@ -365,7 +365,7 @@ const archiveData = [
 
   {
     week: 'WEEK 20',
-    title: 'Archive Continues',
+    title: 'Voortgang',
     reflection: '2026-W20.md',
 
     days: [
@@ -416,11 +416,11 @@ archiveData.forEach((chapter, index) => {
       </h3>
 
       <p>
-        ${chapter.days.length + 1} archived pages
+        ${chapter.days.length + 1} pagina's
       </p>
 
       <button>
-        OPEN ARCHIVE
+        OPEN
       </button>
 
     </article>
@@ -527,7 +527,7 @@ async function renderBookPage(direction = 'next', animate = true) {
   }
 
   pageIndicator.innerHTML = `
-    PAGE ${currentPage + 1}
+    PAGINA ${currentPage + 1}
     /
     ${pages.length}
   `
@@ -611,10 +611,10 @@ artifactContainer.innerHTML = `
       <h2>STAGEVERSLAG</h2>
 
       <p>
-        Complete internship archive.
+        Het volledige stageverslag als downloadbaar PDF.
       </p>
 
-      <span>PDF DOSSIER</span>
+      <span>PDF DOWNLOADEN</span>
 
   </a>
 `

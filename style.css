@@ -1403,7 +1403,7 @@ body.has-custom-cursor * {
 }
 
 .artifact-card::before {
-  content: 'CLASSIFIED DOSSIER';
+  content: 'VERTROUWELIJK DOSSIER';
   position: absolute;
   top: 1.25rem;
   right: 1.5rem;
@@ -1434,7 +1434,7 @@ body.has-custom-cursor * {
 }
 
 .artifact-card.is-downloading::before {
-  content: 'DOWNLOAD INITIATED';
+  content: 'DOWNLOAD GESTART';
   color: white;
 }
 
@@ -1884,19 +1884,19 @@ body.has-custom-cursor * {
 }
 
 .book-view #prevPage::before {
-  content: 'Previous';
+  content: 'Vorige';
 }
 
 .daily-book-modal #prevDaily::before {
-  content: 'Previous';
+  content: 'Vorige';
 }
 
 .book-view #nextPage::before {
-  content: 'Next';
+  content: 'Volgende';
 }
 
 .daily-book-modal #nextDaily::before {
-  content: 'Next';
+  content: 'Volgende';
 }
 
 @media (max-width: 900px) {

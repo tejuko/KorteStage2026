@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Living Archive</title>
+  <title>Mijn Stage Verslag</title>
 
   <link rel="stylesheet" href="style.css" />
 
@@ -21,9 +21,9 @@
   <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 
   <header class="hero">
-    <h1 class="title">THE LIVING ARCHIVE</h1>
+    <h1 class="title">MIJN STAGE VERSLAG</h1>
     <p class="subtitle">
-      Portfolio • Dagboek • Experimenten
+      Portfolio • Logboek • Projecten
     </p>
   </header>
 
@@ -31,70 +31,69 @@
     <button data-section="portfolio">Portfolio</button>
     <button data-section="daily">Daglogs</button>
     <button data-section="weekly">Weeklogs</button>
-    <button data-section="artifacts">Artifacts</button>
+    <button data-section="artifacts">Artefacten</button>
   </nav>
 
   <main>
 
     <section id="portfolio" class="section active">
       <div class="section-header">
-        <h2>IDENTITY WALL</h2>
-        <p>Een verzameling digitale artefacten uit mijn stage- en maakproces.</p>
+        <h2>OVER MIJ</h2>
+        <p>Een overzicht van mijn stageperiode, projecten en persoonlijk profiel.</p>
       </div>
 
       <div class="project-grid identity-wall" id="identityWall">
 
         <article class="project-card identity-card">
           <div class="project-glow"></div>
-          <span>PROJECTS</span>
-          <h3>Development Work</h3>
+          <span>PROJECTEN</span>
+          <h3>Stageopdrachten</h3>
           <p>
-            WordPress, ACF, Bricks, SEO pages en experimentele interfaces.
+            WordPress, ACF, Bricks Builder, SEO-pagina's en experimentele interfaces.
           </p>
         </article>
 
         <a class="project-card identity-card" href="https://tejuko.github.io/Portfolio_Tess_Kollof/" target="_blank" rel="noreferrer">
           <div class="project-glow"></div>
           <span>PORTFOLIO</span>
-          <h3>Bekijk mijn werk
-          </h3>
-          <p>Een website met mijn projecten en werk.</p>
-        </a>        
-        
+          <h3>Bekijk mijn werk</h3>
+          <p>Een website met een overzicht van mijn projecten en ontwerpen.</p>
+        </a>
+
         <a class="project-card identity-card" href="./assets/pdfs/CV Tess Kollof.pdf" download>
           <div class="project-glow"></div>
           <span>CV</span>
           <h3>Curriculum Vitae</h3>
           <p>
-            Mijn rol, vaardigheden, leerdoelen en groei tijdens de stageperiode.
+            Mijn achtergrond, vaardigheden en groei tijdens de stageperiode.
           </p>
         </a>
 
         <a class="project-card identity-card" href="https://github.com/" target="_blank" rel="noreferrer">
           <div class="project-glow"></div>
           <span>GITHUB</span>
-          <h3>Code Archive</h3>
-          <p>Repositories, experimenten en technische sporen van mijn werk.</p>
+          <h3>Codeoverzicht</h3>
+          <p>Repositories en technische sporen van mijn werk tijdens de stage.</p>
         </a>
 
         <a class="project-card identity-card" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
           <div class="project-glow"></div>
           <span>LINKEDIN</span>
-          <h3>Professional Signal</h3>
-          <p>Mijn professionele profiel en netwerk buiten dit archief.</p>
+          <h3>Professioneel Profiel</h3>
+          <p>Mijn professionele profiel en netwerk buiten dit stageverslag.</p>
         </a>
 
         <a class="project-card identity-card" href="./assets/pdfs/stageverslag.pdf" download>
           <div class="project-glow"></div>
           <span>PDF</span>
-          <h3>Stage Report</h3>
-          <p>Het volledige stageverslag als downloadbaar dossier.</p>
+          <h3>Stageverslag PDF</h3>
+          <p>Het volledige stageverslag als downloadbaar document.</p>
         </a>
 
         <article class="project-card identity-card">
           <div class="project-glow"></div>
-          <span>EXPERIMENTS</span>
-          <h3>Lab Notes</h3>
+          <span>EXPERIMENTEN</span>
+          <h3>Experimenten & Notities</h3>
           <p>Ontwerpstudies, prototypes en losse vondsten uit het leerproces.</p>
         </article>
 
@@ -104,8 +103,8 @@
 
     <section id="daily" class="section">
       <div class="section-header">
-        <h2>DAILY RECORDS</h2>
-        <p>Alle daglogs als archive records. Open een dossier om door de logs te swipen.</p>
+        <h2>DAGLOGS</h2>
+        <p>Alle dagelijkse logs van mijn stageperiode. Open een record om door de notities te lezen.</p>
       </div>
 
       <div class="daily-archive-grid" id="dailyArchiveGrid"></div>
@@ -117,15 +116,15 @@
       <div class="archive-header">
 
         <p class="archive-label">
-          DIGITAL ARCHIVE
+          STAGEARCHIEF
         </p>
 
         <h2>
-          WEEK CHAPTERS
+          WEEKOVERZICHTEN
         </h2>
 
         <p class="archive-description">
-          Open archived development chapters.
+          Open een week om de logs en reflecties te lezen.
         </p>
 
       </div>
@@ -145,11 +144,11 @@
         <div class="book-topbar">
 
           <button id="closeBook">
-            CLOSE ARCHIVE
+            SLUITEN
           </button>
 
           <div class="page-indicator" id="pageIndicator">
-            PAGE 1 / 1
+            PAGINA 1 / 1
           </div>
 
         </div>
@@ -180,8 +179,8 @@
 
     <section id="artifacts" class="section">
       <div class="section-header">
-        <h2>ARTIFACTS</h2>
-        <p>Classified dossiers en downloads uit het stage-archief.</p>
+        <h2>DOWNLOADS</h2>
+        <p>Hier vind je mijn stageverslag en CV als downloadbare bestanden.</p>
       </div>
 
       <div class="artifact-container" id="artifactContainer"></div>
@@ -197,11 +196,11 @@
       <div class="book-topbar">
 
         <button id="closeDailyModal">
-          CLOSE
+          SLUITEN
         </button>
 
         <div class="page-indicator" id="dailyPageIndicator">
-          PAGE 1 / 1
+          PAGINA 1 / 1
         </div>
 
       </div>
