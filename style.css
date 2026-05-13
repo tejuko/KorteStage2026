@@ -4010,3 +4010,65 @@ body {
     inset 0 1px 0 rgba(88,118,195,0.22),
     0 10px 34px rgba(8,15,52,0.40);
 }
+
+/* ==========================================================
+   TYPOGRAFIE FIX — GOUD OP ALLE NAVIGATIEKNOPPEN
+   var(--text) is donker op de perkamentachtergrond.
+   Alle nav/sluit-knoppen krijgen expliciet goud.
+   Perkamentpagina's onaangepast.
+========================================================== */
+
+/* SLUITEN knop boven het boek */
+.book-topbar button {
+  color: #d4a843;
+  border-color: rgba(198,152,38,0.40);
+}
+.book-topbar button:hover {
+  color: #e8c860;
+  border-color: rgba(218,175,52,0.78);
+  background: rgba(22,35,85,0.96);
+  box-shadow: 0 0 24px rgba(200,155,40,0.18);
+}
+
+/* SLUITEN knop in de daglog modal */
+.modal-close {
+  color: #d4a843;
+  border-color: rgba(198,152,38,0.36);
+  background: rgba(14,22,58,0.88);
+}
+.modal-close:hover {
+  color: #e8c860;
+  border-color: rgba(218,175,52,0.72);
+  background: rgba(22,35,85,0.95);
+  box-shadow: 0 0 24px rgba(200,155,40,0.18);
+}
+
+/* Zijknoppen VORIGE / VOLGENDE */
+.book-view .page-btn,
+.daily-book-modal .page-btn,
+.side-nav-btn {
+  color: #d4a843;
+  background: rgba(14,22,58,0.82);
+  border-color: rgba(198,152,38,0.28);
+}
+.book-view .page-btn:hover,
+.daily-book-modal .page-btn:hover,
+.side-nav-btn:hover {
+  color: #e8c860;
+  border-color: rgba(218,175,52,0.72);
+  background: rgba(22,35,85,0.92);
+  box-shadow: 0 0 28px rgba(200,155,40,0.16);
+}
+
+/* Navigatie paginaknoppen (pijlen) */
+.page-btn {
+  color: #d4a843;
+}
+.page-btn:hover {
+  color: #e8c860;
+}
+
+/* Page indicator: consistente goudtoon */
+.page-indicator {
+  color: #d4a843;
+}
