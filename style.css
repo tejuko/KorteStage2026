@@ -4072,3 +4072,32 @@ body {
 .page-indicator {
   color: #d4a843;
 }
+
+/* ==========================================================
+   LOG MODAL ACHTERGROND — BLURRY PERKAMENT
+   Semi-transparant navy met blur i.p.v. bijna-zwart.
+   Perkamentpagina's onaangepast.
+========================================================== */
+
+.log-modal {
+  background: rgba(12, 18, 55, 0.72);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  background-attachment: unset;
+}
+
+/* Modal backdrop ook bijgewerkt */
+.modal-backdrop {
+  background: rgba(12, 18, 55, 0.35);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+/* Mobile: blur uitzetten voor prestaties */
+@media (pointer: coarse) {
+  .log-modal {
+    background: rgba(12, 18, 55, 0.88);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
