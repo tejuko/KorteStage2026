@@ -4168,3 +4168,19 @@ body {
 .daily-book-modal #nextOpdracht::before {
   content: 'Volgende';
 }
+
+/* Artefacten grid: stageverslag boven, feedback-PDFs naast elkaar */
+.artifact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.artifact-container > .artifact-card:first-child {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 700px) {
+  .artifact-container {
+    grid-template-columns: 1fr;
+  }
+}
