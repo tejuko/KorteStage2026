@@ -4131,3 +4131,12 @@ body {
     -webkit-backdrop-filter: none;
   }
 }
+
+/* Opdracht cards zijn nu klikbaar */
+.opdracht-card {
+  cursor: pointer;
+}
+.opdracht-card:focus-visible {
+  outline: 2px solid rgba(218,175,52,0.7);
+  outline-offset: 4px;
+}
