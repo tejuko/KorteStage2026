@@ -15,54 +15,86 @@ import {
 
 const opdrachten = [
   {
-    file: 'wordpress-menu-sitemap.md',
-    client: 'Sabé Verpakkingen',
-    title: 'WordPress Menu & Sitemap',
+    file: '01-seo-diensten-pagina-bricks.md',
+    client: 'Ranking Masters · oefenopdracht',
+    title: 'SEO-diensten-pagina in Bricks',
     description:
-      'Onderzoek en oplossing voor verdwijnende navigatielinks naast de "Ons assortiment" dropdown. Daarnaast lastmod-datums toegevoegd aan subcategoriepagina\'s in de sitemap voor betere SEO-indexering.',
+      'Een Figma-ontwerp van de SEO-diensten-pagina nabouwen in WordPress met Bricks Builder. Inwerkopdracht om snel productief te worden in de tool die RM voor klantsites gebruikt.',
     status: 'afgerond',
-    tags: ['WordPress', 'PHP', 'SEO', 'Yoast']
+    tags: ['WordPress', 'Bricks Builder', 'Figma', 'SEO']
   },
   {
-    file: 'barbie-acf-project.md',
-    client: 'Intern project',
-    title: 'Barbie ACF Project',
+    file: '02-shopify-wohtah.md',
+    client: 'Eigen concept',
+    title: "Woh'Tah Shopify-webshop",
     description:
-      'Custom post type architectuur opgezet met Advanced Custom Fields. Relationship systems en een thematisch WordPress archief gebouwd als verdiepingsopdracht in WordPress-development.',
+      "Vrije opdracht: een fictieve heksen-webshop bouwen in Shopify als kennismaking met het platform. Eigen concept bedacht, theme aangepast en producten + branding ingericht.",
+    status: 'afgerond',
+    tags: ['Shopify', 'Concept', 'Branding']
+  },
+  {
+    file: '03-ina-divina-acf.md',
+    client: 'Ina Divina',
+    title: 'Achtergrondafbeeldingen via ACF',
+    description:
+      "Op een groot aantal pagina's achtergrondafbeeldingen vervangen via Advanced Custom Fields in WordPress. Eigen tracking-spreadsheet opgezet om gestructureerd te werken en geen pagina te missen.",
+    status: 'afgerond',
+    tags: ['WordPress', 'ACF']
+  },
+  {
+    file: '04-sabe-verpakkingen.md',
+    client: 'Sabé Verpakkingen',
+    title: 'Intern linkplan + PageSpeed',
+    description:
+      "Honderden pagina's voorzien van interne links op semantische woorden volgens het actieplan. Daarnaast PageSpeed-optimalisaties. ~580 link-toevoegingen verwerkt uit 898 actierijen.",
+    status: 'lopend',
+    tags: ['WordPress', 'SEO', 'PageSpeed', 'Contentstrategie']
+  },
+  {
+    file: '05-acf-leerproject-devjuulr.md',
+    client: 'Eigen leerproject',
+    title: 'ACF-leerproject (devjuulr)',
+    description:
+      'Naast het klantwerk een eigen WordPress-dev-omgeving opgezet om ACF en de PHP/template-laag dieper te begrijpen. Custom Post Types, field groups en classic theme Twenty Twenty-One.',
     status: 'afgerond',
     tags: ['WordPress', 'ACF', 'PHP', 'Custom CPT']
   },
   {
-    file: 'seo-landingspagina.md',
-    client: 'Klant',
-    title: 'SEO Landingspagina',
+    file: '06-acf-barbie-project.md',
+    client: 'Eigen leerproject',
+    title: 'Barbie ACF-leerproject',
     description:
-      'Figma-ontwerp volledig omgezet naar een WordPress-pagina via Bricks Builder. Van wireframe tot live implementatie — inclusief responsive aanpassingen en SEO-structuur.',
+      'Zelfstandig ACF-leerproject met relaties tussen Custom Post Types. 3 CPT\'s (Barbie, Sidekick, Film), concept en plan vooraf bedacht in Figma. Verdieping na het devjuulr-project.',
     status: 'afgerond',
-    tags: ['Figma', 'Bricks Builder', 'WordPress', 'SEO']
+    tags: ['WordPress', 'ACF', 'Custom CPT', 'Figma']
   },
   {
-    file: 'intern-linkplan.md',
-    client: 'Sabé Verpakkingen',
-    title: 'Intern Linkplan',
+    file: '07-rm-google-ads-landingspagina.md',
+    client: 'Ranking Masters · intern',
+    title: 'Google Ads-landingspagina',
     description:
-      'Grootschalige implementatie van interne links op de website van Sabé Verpakkingen. Inclusief procesverbeteringen, werkdocumentatie en afstemming met het team.',
+      'Een Google Ads-landingspagina voor RM gebouwd, strikt vanuit het Figma-ontwerp. BEM-classes, Ubuntu Sans en een eigen build-workflow. Feedback van Conrad verwerkt.',
     status: 'afgerond',
-    tags: ['SEO', 'WordPress', 'Contentstrategie']
+    tags: ['WordPress', 'Bricks Builder', 'Figma', 'BEM']
+  },
+  {
+    file: '08-rm-werkwijze-pagina.md',
+    client: 'Ranking Masters · intern',
+    title: 'Werkwijze-pagina',
+    description:
+      'De werkwijze-pagina voor Ranking Masters gebouwd en visueel afgestemd op de huisstijl en het Figma-design. Feedback van Sjors en Conrad afgewacht.',
+    status: 'lopend',
+    tags: ['WordPress', 'Bricks Builder', 'Figma']
+  },
+  {
+    file: '09-bruidsmode-haarlem-sea.md',
+    client: 'Bruidsmode Haarlem',
+    title: 'SEA-landingspagina',
+    description:
+      'Een SEA-landingspagina gebouwd die aansluit op de Google Ads-campagne. Zelfstandig opgezet met bewuste CRO-keuzes en ACF-veldkeuzes als design-beslissingen. Klaar voor review.',
+    status: 'lopend',
+    tags: ['WordPress', 'ACF', 'SEA', 'CRO']
   }
-
-  // ============================================================
-  // VOEG HIER JE ANDERE 4 OPDRACHTEN TOE — kopieer dit blok:
-  //
-  // ,{
-  //   file: 'jouw-opdracht.md',
-  //   client: 'Klantnaam',
-  //   title: 'Opdracht Titel',
-  //   description: 'Korte beschrijving van de opdracht.',
-  //   status: 'afgerond',
-  //   tags: ['Tag 1', 'Tag 2']
-  // }
-  // ============================================================
 ]
 
 
