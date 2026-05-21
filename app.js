@@ -613,38 +613,41 @@ closeBook.addEventListener('click', () => {
 })
 
 // ==========================
-// PDF ARTIFACT
+// PDF ARTEFACTEN
 // ==========================
 
-const artifactContainer = document.createElement('div')
+const artefacten = [
+  {
+    file: 'stageverslag.pdf',
+    title: 'STAGEVERSLAG',
+    description: 'Het volledige stageverslag als downloadbaar PDF.'
+  },
+  {
+    file: 'feedback-danique-w19.pdf',
+    title: 'FEEDBACK DANIQUE',
+    description: 'Halverwege-feedback van bedrijfsbegeleider Danique Lammertink — ingevuld 2026-05-06 (week 19).'
+  },
+  {
+    file: 'feedback-rico-w19.pdf',
+    title: 'FEEDBACK RICO',
+    description: 'Halverwege-feedback van naaste collega Rico Toet — ingevuld 2026-05-08 (week 19).'
+  }
+]
 
-artifactContainer.classList.add('artifact-container')
-
-artifactContainer.innerHTML = `
-  <a href="./assets/pdfs/stageverslag.pdf"
-     download
-     class="artifact-card">
-
-      <div class="artifact-glow"></div>
-
-      <h2>STAGEVERSLAG</h2>
-
-      <p>
-        Het volledige stageverslag als downloadbaar PDF.
-      </p>
-
-      <span>PDF DOWNLOADEN</span>
-
-  </a>
-`
-
-document.body.appendChild(artifactContainer)
 
 const artifactSectionContainer = document.getElementById('artifactContainer')
 
 if (artifactSectionContainer) {
-  artifactSectionContainer.innerHTML = artifactContainer.innerHTML
-  artifactContainer.remove()
+  artifactSectionContainer.innerHTML = artefacten
+    .map(item => `
+      <a href="./assets/pdfs/${item.file}" download class="artifact-card">
+        <div class="artifact-glow"></div>
+        <h2>${item.title}</h2>
+        <p>${item.description}</p>
+        <span>PDF DOWNLOADEN</span>
+      </a>
+    `)
+    .join('')
 }
 
 bindSwipe(dailyPage, () => nextDaily.click(), () => prevDaily.click())
