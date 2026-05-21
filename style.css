@@ -4112,22 +4112,23 @@ body {
 ========================================================== */
 
 .log-modal {
-  background: rgba(12, 18, 55, 0.45);
-  backdrop-filter: blur(22px);
-  -webkit-backdrop-filter: blur(22px);
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
   background-attachment: unset;
 }
 
-/* Modal backdrop ook bijgewerkt */
+/* Navy blur staat op de backdrop (position: fixed) zodat hij altijd
+   het hele viewport dekt — ook bij scrollen. */
 .modal-backdrop {
-  background: rgba(12, 18, 55, 0.20);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  background: rgba(12, 18, 55, 0.45);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
 }
 
 /* Mobile: blur uitzetten voor prestaties */
 @media (pointer: coarse) {
-  .log-modal {
+  .modal-backdrop {
     background: rgba(12, 18, 55, 0.88);
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
