@@ -1027,6 +1027,7 @@ body.has-custom-cursor * {
   .title {
     font-size: clamp(2.55rem, 15vw, 4.25rem);
     letter-spacing: 0.08rem;
+    text-decoration: none;
   }
 
   .subtitle {
@@ -2058,6 +2059,7 @@ body.has-custom-cursor * {
 .page-title {
   font-size: clamp(1.75rem, 6vw, 4.5rem);
   letter-spacing: 0.08rem;
+  text-decoration: none;
 }
 
 .page-layout {
@@ -4139,4 +4141,27 @@ body {
 .opdracht-card:focus-visible {
   outline: 2px solid rgba(218,175,52,0.7);
   outline-offset: 4px;
+}
+
+/* Titel als link: geen onderstreping, gradient overnemen */
+.title a {
+  text-decoration: none;
+  background: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-family: inherit;
+  letter-spacing: inherit;
+}
+.title a:hover {
+  text-decoration: none;
+}
+
+/* Opdracht modal: VORIGE / VOLGENDE tekst op zijknoppen */
+.daily-book-modal #prevOpdracht::before {
+  content: 'Vorige';
+}
+.daily-book-modal #nextOpdracht::before {
+  content: 'Volgende';
 }
