@@ -4111,24 +4111,26 @@ body {
    Perkamentpagina's onaangepast.
 ========================================================== */
 
+/* Navy blur op .log-modal zelf (position: fixed; inset: 0) i.p.v.
+   op .modal-backdrop, omdat perspective op .log-modal er voor zorgt
+   dat position: fixed op descendants zich als absolute gedraagt
+   (en dus mee-scrollt met content). */
 .log-modal {
-  background: transparent;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-  background-attachment: unset;
-}
-
-/* Navy blur staat op de backdrop (position: fixed) zodat hij altijd
-   het hele viewport dekt — ook bij scrollen. */
-.modal-backdrop {
   background: rgba(12, 18, 55, 0.45);
   backdrop-filter: blur(22px);
   -webkit-backdrop-filter: blur(22px);
+  background-attachment: fixed;
+}
+
+.modal-backdrop {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 /* Mobile: blur uitzetten voor prestaties */
 @media (pointer: coarse) {
-  .modal-backdrop {
+  .log-modal {
     background: rgba(12, 18, 55, 0.88);
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
