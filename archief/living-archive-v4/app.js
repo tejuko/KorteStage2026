@@ -1,4 +1,5 @@
 import './systems/archiveSystem.js'
+import './systems/interviewsSystem.js'
 import { switchView } from './systems/uiSystem.js'
 
 const navButtons = document.querySelectorAll('.nav-btn')

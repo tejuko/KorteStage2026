@@ -19,6 +19,9 @@ navButtons.forEach(button => {
       section.classList.remove('active', 'section-enter')
     })
 
+    navButtons.forEach(btn => btn.classList.remove('active'))
+    button.classList.add('active')
+
     document
       .getElementById(target)
       .classList.add('active')
@@ -29,6 +32,14 @@ navButtons.forEach(button => {
 
   })
 
+})
+
+// Markeer de knop van de standaard-actieve sectie bij het laden
+const initialSection = document.querySelector('.section.active')?.id
+navButtons.forEach(button => {
+  if (button.dataset.section === initialSection) {
+    button.classList.add('active')
+  }
 })
 
 
@@ -60,8 +71,22 @@ const dailyLogs = [
   '2026-05-12.md',
   '2026-05-13.md',
   '2026-05-15.md',
+  '2026-05-18.md',
   '2026-05-19.md',
   '2026-05-20.md',
+  '2026-05-21.md',
+  '2026-05-22.md',
+  '2026-05-26.md',
+  '2026-05-27.md',
+  '2026-05-28.md',
+  '2026-05-29.md',
+  '2026-06-01.md',
+  '2026-06-02.md',
+  '2026-06-03.md',
+  '2026-06-04.md',
+  '2026-06-05.md',
+  '2026-06-08.md',
+  '2026-06-09.md',
 ]
 
 let currentDailyIndex = 0
@@ -387,8 +412,24 @@ const archiveData = [
     reflection: '2026-W21.md',
 
     days: [
+      '2026-05-18.md',
       '2026-05-19.md',
       '2026-05-20.md',
+      '2026-05-21.md',
+      '2026-05-22.md',
+    ]
+  },
+
+  {
+    week: 'WEEK 22',
+    title: 'Evaluatie & Gesprek',
+    reflection: '2026-W22.md',
+
+    days: [
+      '2026-05-26.md',
+      '2026-05-27.md',
+      '2026-05-28.md',
+      '2026-05-29.md',
     ]
   }
 
@@ -650,10 +691,217 @@ if (artifactSectionContainer) {
     .join('')
 }
 
+// ==========================
+// INTERVIEWS
+// ==========================
+
+const interviews = [
+  {
+    file: 'interview-seo.md',
+    topic: 'SEO',
+    title: 'Interview — SEO'
+  },
+  {
+    file: 'interview-cro.md',
+    topic: 'CRO',
+    title: 'Interview — CRO'
+  }
+]
+
+let currentInterviewIndex = 0
+let interviewIsTurning = false
+const interviewCache = new Map()
+
+const interviewGrid = document.getElementById('interviewGrid')
+const interviewModal = document.getElementById('interviewModal')
+const interviewBackdrop = document.getElementById('interviewBackdrop')
+const interviewPage = document.getElementById('interviewPage')
+const interviewIndicator = document.getElementById('interviewIndicator')
+const closeInterviewModal = document.getElementById('closeInterviewModal')
+const nextInterview = document.getElementById('nextInterview')
+const prevInterview = document.getElementById('prevInterview')
+
+
+async function getInterview(item) {
+
+  if (interviewCache.has(item.file)) {
+    return interviewCache.get(item.file)
+  }
+
+  const response = await fetch(`./logs/interviews/${item.file}`)
+
+  const markdown = await response.text()
+
+  const data = {
+    ...item,
+    html: marked.parse(markdown)
+  }
+
+  interviewCache.set(item.file, data)
+
+  return data
+
+}
+
+
+async function renderInterviewGrid() {
+
+  const items = await Promise.all(
+    interviews.map(getInterview)
+  )
+
+  interviewGrid.innerHTML = items
+    .map((item, index) => `
+      <article class="daily-record-card" data-index="${index}" tabindex="0">
+        <div class="record-scan"></div>
+        <span class="record-date">${item.topic}</span>
+        <h3>${item.title}</h3>
+        <span class="record-code">INTERVIEW ${String(index + 1).padStart(2, '0')}</span>
+      </article>
+    `)
+    .join('')
+
+  interviewGrid.querySelectorAll('.daily-record-card').forEach(card => {
+    card.addEventListener('click', () => openInterviewModal(Number(card.dataset.index)))
+    card.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault()
+        openInterviewModal(Number(card.dataset.index))
+      }
+    })
+  })
+
+}
+
+
+async function loadInterview(index, direction = 'next', animate = true) {
+
+  if (interviewIsTurning) {
+    return
+  }
+
+  interviewIsTurning = true
+
+  const item = await getInterview(interviews[index])
+
+  if (animate) {
+    await animatePageTurn(interviewPage, direction)
+  }
+
+  interviewModal.scrollTo({
+    top: 0,
+    behavior: 'auto'
+  })
+
+  interviewPage.innerHTML = `
+    <div class="modal-page-meta">
+      <span>${item.topic}</span>
+      <span>${index + 1} / ${interviews.length}</span>
+    </div>
+    <div class="markdown-page">
+      ${item.html}
+    </div>
+  `
+
+  interviewIndicator.textContent = item.topic
+
+  if (animate) {
+    animatePageEnter(interviewPage, direction)
+  }
+
+  window.setTimeout(() => {
+    interviewIsTurning = false
+  }, animate ? 390 : 0)
+
+}
+
+
+async function openInterviewModal(index) {
+
+  currentInterviewIndex = index
+  interviewModal.classList.add('active')
+  interviewModal.setAttribute('aria-hidden', 'false')
+  document.body.classList.add('modal-open')
+
+  await loadInterview(currentInterviewIndex, 'next', false)
+
+}
+
+
+function closeInterviewReader() {
+
+  interviewModal.classList.remove('active')
+  interviewModal.setAttribute('aria-hidden', 'true')
+  document.body.classList.remove('modal-open')
+
+}
+
+
+nextInterview.addEventListener('click', () => {
+
+  if (interviewIsTurning || !interviewModal.classList.contains('active')) {
+    return
+  }
+
+  currentInterviewIndex++
+
+  if (currentInterviewIndex >= interviews.length) {
+    currentInterviewIndex = 0
+  }
+
+  loadInterview(currentInterviewIndex, 'next')
+
+})
+
+
+prevInterview.addEventListener('click', () => {
+
+  if (interviewIsTurning || !interviewModal.classList.contains('active')) {
+    return
+  }
+
+  currentInterviewIndex--
+
+  if (currentInterviewIndex < 0) {
+    currentInterviewIndex = interviews.length - 1
+  }
+
+  loadInterview(currentInterviewIndex, 'prev')
+
+})
+
+
+closeInterviewModal.addEventListener('click', closeInterviewReader)
+interviewBackdrop.addEventListener('click', closeInterviewReader)
+
+document.addEventListener('keydown', event => {
+  if (!interviewModal.classList.contains('active')) {
+    return
+  }
+
+  if (event.key === 'Escape') {
+    closeInterviewReader()
+  }
+
+  if (event.key === 'ArrowRight') {
+    nextInterview.click()
+  }
+
+  if (event.key === 'ArrowLeft') {
+    prevInterview.click()
+  }
+})
+
+
+renderInterviewGrid()
+
+
 bindSwipe(dailyPage, () => nextDaily.click(), () => prevDaily.click())
 bindDragSwipe(dailyPage, () => nextDaily.click(), () => prevDaily.click())
 bindSwipe(bookPage, () => nextPage.click(), () => prevPage.click())
 bindDragSwipe(bookPage, () => nextPage.click(), () => prevPage.click())
+bindSwipe(interviewPage, () => nextInterview.click(), () => prevInterview.click())
+bindDragSwipe(interviewPage, () => nextInterview.click(), () => prevInterview.click())
 
 requestAnimationFrame(() => {
   initCinematicEffects()

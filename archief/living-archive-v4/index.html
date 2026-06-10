@@ -25,6 +25,7 @@
     <button class="nav-btn active" data-view="chapters">Chapters</button>
     <button class="nav-btn" data-view="projects">Projects</button>
     <button class="nav-btn" data-view="artifacts">Artifacts</button>
+    <button class="nav-btn" data-view="interviews">Interviews</button>
   </nav>
 
   <main>
@@ -95,6 +96,31 @@
           <h3>Stageverslag</h3>
           <p>Complete internship archive.</p>
         </a>
+      </div>
+    </section>
+
+    <section class="view" id="interviewsView">
+      <div class="section-intro">
+        <p>COLLEGA-GESPREKKEN</p>
+        <h2>INTERVIEWS</h2>
+      </div>
+
+      <div class="chapter-grid" id="interviewGrid"></div>
+
+      <div class="book-view hidden" id="interviewReader">
+        <div class="book-topbar">
+          <button id="closeInterview">Close Interview</button>
+          <div class="book-info">
+            <span id="interviewTopic">SEO</span>
+          </div>
+        </div>
+
+        <div class="book-layout">
+          <div class="book-shell">
+            <div class="book-spine" aria-hidden="true"></div>
+            <article class="book-page" id="interviewPage" aria-live="polite"></article>
+          </div>
+        </div>
       </div>
     </section>
   </main>

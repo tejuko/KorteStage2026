@@ -22,6 +22,7 @@
 
   <header class="hero">
     <h1 class="title">MIJN STAGE VERSLAG</h1>
+    <div class="ornament hero-ornament" aria-hidden="true"><span>◆</span></div>
     <p class="subtitle">
       Portfolio • Logboek • Projecten
     </p>
@@ -29,8 +30,13 @@
 
   <nav class="top-nav">
     <button data-section="portfolio">Over mij</button>
+    <span class="nav-sep" aria-hidden="true">◆</span>
     <button data-section="daily">Daglogs</button>
+    <span class="nav-sep" aria-hidden="true">◆</span>
     <button data-section="weekly">Weeklogs</button>
+    <span class="nav-sep" aria-hidden="true">◆</span>
+    <button data-section="interviews">Interviews</button>
+    <span class="nav-sep" aria-hidden="true">◆</span>
     <button data-section="artifacts">Artefacten</button>
   </nav>
 
@@ -127,6 +133,7 @@
           Open een week om de logs en reflecties te lezen.
         </p>
 
+
       </div>
 
 
@@ -177,6 +184,16 @@
     </section>
 
 
+    <section id="interviews" class="section">
+      <div class="section-header">
+        <h2>INTERVIEWS</h2>
+        <p>Gesprekken met collega's over SEO en CRO. Open een kaart om het interview te lezen.</p>
+      </div>
+
+      <div class="daily-archive-grid" id="interviewGrid"></div>
+    </section>
+
+
     <section id="artifacts" class="section">
       <div class="section-header">
         <h2>DOWNLOADS</h2>
@@ -216,6 +233,43 @@
         </div>
 
         <button class="page-btn" id="nextDaily">
+          →
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="log-modal daily-book-modal" id="interviewModal" aria-hidden="true">
+    <div class="modal-backdrop" id="interviewBackdrop"></div>
+
+    <div class="book-view daily-reader">
+
+      <div class="book-topbar">
+
+        <button id="closeInterviewModal">
+          SLUITEN
+        </button>
+
+        <div class="page-indicator" id="interviewIndicator">
+          SEO
+        </div>
+
+      </div>
+
+      <div class="book-container">
+
+        <button class="page-btn" id="prevInterview">
+          ←
+        </button>
+
+        <div class="book-page-v2" id="interviewPage">
+          <!-- JS vult dit -->
+        </div>
+
+        <button class="page-btn" id="nextInterview">
           →
         </button>
 
