@@ -94,6 +94,42 @@ const opdrachten = [
       'Een SEA-landingspagina gebouwd die aansluit op de Google Ads-campagne. Zelfstandig opgezet met bewuste CRO-keuzes en ACF-veldkeuzes als design-beslissingen. Klaar voor review.',
     status: 'lopend',
     tags: ['WordPress', 'ACF', 'SEA', 'CRO']
+  },
+  {
+    file: '10-rm-blog-tools-plugin.md',
+    client: 'Ranking Masters · intern',
+    title: 'RM Blog Tools — WordPress-plugin',
+    description:
+      'Mijn eerste eigen WordPress-plugin van scratch: een [seo_calculator]-shortcode met conditional asset-loading en scope-geïsoleerde CSS (2488 selectoren geprefixt). Los van het theme en herbruikbaar.',
+    status: 'afgerond',
+    tags: ['WordPress', 'Plugin', 'PHP', 'CSS']
+  },
+  {
+    file: '11-rm-dynamische-seo-paginas.md',
+    client: 'Ranking Masters · intern',
+    title: 'Dynamische SEO-paginatemplate',
+    description:
+      'Een herbruikbare, dummyproof SEO-paginatemplate gebouwd naar het Figma-ontwerp "RM Anouk": ~16 ACF flexible-content secties, video↔formulier-toggle en leek-proof velden. Ingeleverd.',
+    status: 'afgerond',
+    tags: ['WordPress', 'ACF', 'Flexible Content', 'Figma', 'SEO']
+  },
+  {
+    file: '12-rm-calculators.md',
+    client: 'Ranking Masters · intern',
+    title: 'Calculator-widgets (SEO + Google Ads)',
+    description:
+      'Twee interactieve calculator-widgets met de Ranky-mascotte in RM-huisstijl, met de signature gradient-slide hover op de knoppen. Feedback van Conrad verwerkt; mobiele layout nog in ontwikkeling.',
+    status: 'lopend',
+    tags: ['WordPress', 'CSS', 'JavaScript', 'CRO']
+  },
+  {
+    file: '13-rm-case-study.md',
+    client: 'Ranking Masters · intern',
+    title: 'Case study-template',
+    description:
+      'Een herbruikbare case study-template (ACF flexible content, eigen template-part per module) — opgezet vanuit de backend/datastructuur, net als de dynamische SEO-template. In opbouw met de NineTwoFive-case.',
+    status: 'lopend',
+    tags: ['WordPress', 'ACF', 'Flexible Content', 'CRO']
   }
 ]
 

@@ -87,6 +87,11 @@ const dailyLogs = [
   '2026-06-05.md',
   '2026-06-08.md',
   '2026-06-09.md',
+  '2026-06-10.md',
+  '2026-06-11.md',
+  '2026-06-12.md',
+  '2026-06-22.md',
+  '2026-06-23.md',
 ]
 
 let currentDailyIndex = 0
@@ -431,6 +436,42 @@ const archiveData = [
       '2026-05-28.md',
       '2026-05-29.md',
     ]
+  },
+
+  {
+    week: 'WEEK 23',
+    title: 'Dynamische SEO-pagina',
+    reflection: '2026-W23.md',
+
+    days: [
+      '2026-06-01.md',
+      '2026-06-02.md',
+      '2026-06-03.md',
+      '2026-06-04.md',
+      '2026-06-05.md',
+    ]
+  },
+
+  {
+    week: 'WEEK 24',
+    title: 'Template & Case Study',
+    reflection: '2026-W24.md',
+
+    days: [
+      '2026-06-08.md',
+      '2026-06-09.md',
+      '2026-06-10.md',
+      '2026-06-11.md',
+      '2026-06-12.md',
+    ]
+  },
+
+  {
+    week: 'WEEK 25',
+    title: 'Ziekteweek',
+    reflection: '2026-W25.md',
+
+    days: []
   }
 
 ]
@@ -699,12 +740,37 @@ const interviews = [
   {
     file: 'interview-seo.md',
     topic: 'SEO',
-    title: 'Interview — SEO'
+    title: 'Interview — SEO',
+    code: 'INTERVIEW 01',
+    description: 'Een gesprek met Yannick (AI Search) over hoe SEO in de praktijk werkt — van zoekwoorden en content tot de technische keuzes erachter.'
   },
   {
     file: 'interview-cro.md',
     topic: 'CRO',
-    title: 'Interview — CRO'
+    title: 'Interview — CRO',
+    code: 'INTERVIEW 02',
+    description: 'Een gesprek met Rico (CRO) over conversieoptimalisatie — bezoekersgedrag, vertrouwen en kleine aanpassingen met groot effect.'
+  },
+  {
+    file: 'analyse-1-linkplan.md',
+    topic: 'Analyse · Linkplan',
+    title: 'Analyse — Sabé intern linkplan',
+    code: 'ANALYSE 01',
+    description: 'Analyse van het Sabé-linkplan: hoe een SEO-actieplan op de frontend pas waarde krijgt als de uitvoerder per link meedenkt over de bezoeker.'
+  },
+  {
+    file: 'analyse-2-seo-frontend.md',
+    topic: 'Analyse · SEO',
+    title: 'Analyse — SEO → frontend',
+    code: 'ANALYSE 02',
+    description: 'Op basis van het Yannick-interview: hoe een SEO-strategie zich vertaalt naar concrete frontend-keuzes (rendering, headings, Core Web Vitals).'
+  },
+  {
+    file: 'analyse-3-cro-frontend.md',
+    topic: 'Analyse · CRO',
+    title: 'Analyse — CRO → frontend',
+    code: 'ANALYSE 03',
+    description: 'Op basis van het Rico-interview: hoe CRO zich vertaalt naar de frontend — helderheid, vertrouwen, CTA en de eerste schermvulling.'
   }
 ]
 
@@ -756,7 +822,8 @@ async function renderInterviewGrid() {
         <div class="record-scan"></div>
         <span class="record-date">${item.topic}</span>
         <h3>${item.title}</h3>
-        <span class="record-code">INTERVIEW ${String(index + 1).padStart(2, '0')}</span>
+        <p>${item.description}</p>
+        <span class="record-code">${item.code}</span>
       </article>
     `)
     .join('')
