@@ -34,14 +34,14 @@ Tweede ACF-leerproject, volledig zelfstandig opgezet als Barbie-themed website �
 
 Werkende Barbie-site met CPT-relaties, child theme en ACF-velddefinities. Theme geëxporteerd als `barbie-theme.zip`.
 
-> *Afbeelding: homepage / filmoverzicht*  
-> `[AAN TE VULLEN]`
+![Homepage van de Barbie World-site, gevuld uit de Custom Post Types](media/barbie/barbie-home.png)
+> *Homepage / overzicht — tellingen en spotlight, gevuld uit de CPT's Barbies, Sidekicks en Films.*
 
-> *Afbeelding: single Barbie-pagina met gekoppelde film en sidekick*  
-> `[AAN TE VULLEN]`
+![Barbie-detailpagina met ACF-velden en gekoppelde film](media/barbie/barbie-detail.png)
+> *Single Barbie-pagina (Prinses Annika) met eigen ACF-velden (eerste verschijning, haarkleur, handtekening-outfit) en de gekoppelde film.*
 
-> *Afbeelding: Figma-schets die ik vooraf heb gemaakt*  
-> `[AAN TE VULLEN]`
+![Filmpagina met via ACF-relatievelden gekoppelde Barbie en sidekick](media/barbie/barbie-film.png)
+> *Filmpagina met de via ACF-relatievelden gekoppelde Barbie (Genevieve) en sidekick (Twyla) — de relaties tussen de Custom Post Types in actie.*
 
 ---
 
