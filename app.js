@@ -92,6 +92,15 @@ const dailyLogs = [
   '2026-06-12.md',
   '2026-06-22.md',
   '2026-06-23.md',
+  '2026-06-24.md',
+  '2026-06-25.md',
+  '2026-06-26.md',
+  '2026-06-29.md',
+  '2026-06-30.md',
+  '2026-07-01.md',
+  '2026-07-02.md',
+  '2026-07-03.md',
+  '2026-07-06.md',
 ]
 
 let currentDailyIndex = 0
@@ -472,6 +481,44 @@ const archiveData = [
     reflection: '2026-W25.md',
 
     days: []
+  },
+
+  {
+    week: 'WEEK 26',
+    title: 'Afwerking & Case Study',
+    reflection: '2026-W26.md',
+
+    days: [
+      '2026-06-22.md',
+      '2026-06-23.md',
+      '2026-06-24.md',
+      '2026-06-25.md',
+      '2026-06-26.md',
+    ]
+  },
+
+  {
+    week: 'WEEK 27',
+    title: 'Afronden & Opstarten',
+    reflection: '2026-W27.md',
+
+    days: [
+      '2026-06-29.md',
+      '2026-06-30.md',
+      '2026-07-01.md',
+      '2026-07-02.md',
+      '2026-07-03.md',
+    ]
+  },
+
+  {
+    week: 'WEEK 28',
+    title: 'Presentatie & Afronding',
+    reflection: '2026-W28.md',
+
+    days: [
+      '2026-07-06.md',
+    ]
   }
 
 ]
