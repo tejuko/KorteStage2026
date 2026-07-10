@@ -2,6 +2,7 @@
 
 > **Bewijsmateriaal Leerdoel 2 (Oriënteren en begrijpen).** Het stageplan vraagt: *"minimaal 2 projecten analyseren op gebruikersgedrag/marketingdoelen → frontend"*, met als bewijs analyseverslagen + toegepaste verbeteringen. Dit is **analyseverslag 1 van 2**. Het tweede verslag werk ik uit op basis van het Yannick-interview (SEO/AI Search) of een landingspagina-opdracht.
 >
+> Opgesteld 2026-06-10, afgerond juli 2026. Cijfers en feedback komen uit opdracht 04 en mijn logboek (22–24 april, 05-05).
 
 ---
 
@@ -58,3 +59,15 @@ De positieve beoordeling bevestigt dat de bewuste kwaliteitsafweging — niet al
 - Een SEO-actieplan is een **marketingvertaling die op de frontend pas waarde krijgt als de uitvoerder meedenkt.** Een link op een tag-pagina zonder tekst voldoet wel "op papier" maar niet voor een echte bezoeker.
 - **Kwaliteitsborging begint bij de uitvoerder.** Durven zeggen "dit klopt niet" en dat onderbouwen, hoort bij de taak — niet pas bij een review.
 - **Documentatie maakt strategie overdraagbaar.** Dit plan was bedacht in februari en maanden later door mij uitgevoerd; de duidelijkheid van het plan bepaalde hoeveel beoordelingsmomenten ik zelf moest maken.
+
+## 7. Illustratie
+
+Een concreet voorbeeld van de afweging per regel:
+
+- **Groen (link geplaatst):** in een producttekst waarin het woord *"kartonnen doos"* natuurlijk voorkomt, heb ik dat woord gelinkt naar de verzamelpagina `/kartonnen-dozen` — zo kan de bezoeker direct doorklikken naar het volledige assortiment.
+- **Rood (bewust overgeslagen):** op een product-tag-pagina met alleen productknoppen en geen lopende tekst was er geen natuurlijke zin om een contextuele link in te plaatsen; die regel heb ik rood gemarkeerd, met reden.
+
+Deze afwegingen zijn per regel vastgelegd in de gedeelde spreadsheet:
+
+![Spreadsheet van het Sabé-linkplan met groen/rood-markering](media/analyse/5-6-sabe-spreadsheet.png)
+> *Groen = contextuele link toegevoegd, rood = onderbouwd uitgesloten.*

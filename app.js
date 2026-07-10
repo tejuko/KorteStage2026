@@ -107,6 +107,11 @@ let currentDailyIndex = 0
 let dailyIsTurning = false
 const dailyLogCache = new Map()
 
+
+function formatDate(text) {
+  return text.replace(/(\d{4})-(\d{2})-(\d{2})/g, '$3/$2/$1')
+}
+
 const dailyPage = document.getElementById('dailyPage')
 
 const nextDaily = document.getElementById('nextDaily')
@@ -134,7 +139,7 @@ async function getDailyLog(filename) {
     html: marked.parse(markdown),
     title: getMarkdownTitle(markdown, filename),
     preview: getMarkdownPreview(markdown),
-    date: filename.replace('.md', '')
+    date: formatDate(filename.replace('.md', ''))
   }
 
   dailyLogCache.set(filename, log)
@@ -306,7 +311,7 @@ function getMarkdownTitle(markdown, filename) {
     .find(line => line.startsWith('# '))
 
   if (!heading) {
-    return filename.replace('.md', '')
+    return formatDate(filename.replace('.md', ''))
   }
 
   return heading
@@ -613,7 +618,7 @@ function getCurrentWeekPages() {
       path: `./logs/weekly/${currentWeek.reflection}`
     },
     ...currentWeek.days.map(day => ({
-      label: day.replace('.md', ''),
+      label: formatDate(day.replace('.md', '')),
       path: `./logs/daily/${day}`
     }))
   ]
@@ -754,13 +759,24 @@ const artefacten = [
   {
     file: 'feedback-danique-w19.pdf',
     title: 'FEEDBACK DANIQUE',
-    description: 'Halverwege-feedback van bedrijfsbegeleider Danique Lammertink — ingevuld 2026-05-06 (week 19).'
+    description: 'Halverwege-feedback van bedrijfsbegeleider Danique Lammertink — ingevuld 06/05/2026 (week 19).'
   },
   {
     file: 'feedback-rico-w19.pdf',
     title: 'FEEDBACK RICO',
-    description: 'Halverwege-feedback van naaste collega Rico Toet — ingevuld 2026-05-08 (week 19).'
+    description: 'Halverwege-feedback van naaste collega Rico Toet — ingevuld 08/05/2026 (week 19).'
+  },
+  {
+    file: 'laatste-feedback-danique-w28.pdf',
+    title: 'LAATSTE FEEDBACK DANIQUE',
+    description: 'Eindfeedback van bedrijfsbegeleider Danique Lammertink — ingevuld 09-07-2026 (week 28).'
+  },
+  {
+    file: 'laatste-feedback-rico-w28.pdf',
+    title: 'LAATSTE FEEDBACK RICO',
+    description: 'Eindfeedback van naaste collega Rico Toet — ingevuld 09-07-2026 (week 28).'
   }
+
 ]
 
 

@@ -2,8 +2,9 @@
 
 > **Bewijsmateriaal Leerdoel 2 (Oriënteren en begrijpen).** Het stageplan vraagt: *"minimaal 2 projecten analyseren op gebruikersgedrag/marketingdoelen → frontend"*, met als bewijs analyseverslagen + toegepaste verbeteringen. Dit is **analyseverslag 2 van 2**, gebaseerd op het interview met **Yannick** (AI Search Projectmanager, RM) van 22-04-2026.
 >
-> Bron: `bijlagen/interview-yannick-seo-aisearch.md`. Het interview met **Rico** (Head of Tech) werk ik nog uit — dat wordt aanvullend bewijs/verdieping.
+> Bron: `bijlagen/interview-yannick-seo-aisearch.md`. Het interview met **Rico** (Head of Tech) is uitgewerkt in analyseverslag 3 (CRO → frontend) als aanvullende verdieping.
 >
+> Opgesteld 2026-06-23, afgerond juli 2026.
 
 ---
 
@@ -46,16 +47,21 @@ Het inhoudelijke inzicht dat ik hieruit haal: **goede UX en goede SEO wijzen mee
 De principes uit het interview herken ik direct in pagina's die ik tijdens mijn stage heb gebouwd. Concreet:
 
 - **Server-side rendering** — al mijn pagina's draaien op WordPress/PHP met ACF: de HTML wordt server-side opgebouwd (o.a. de dynamische SEO-template en de case study-template met flexible-content-modules). Dat sluit precies aan op Yannicks "SSR > client-side rendering".
+- **Semantische opbouw via ACF-modules** — door per sectie een eigen template-part te bouwen (i.p.v. alles in `<div>`s) houd ik de heading-structuur en HTML-semantiek onder controle: één H1 per pagina met een logische H2/H3-hiërarchie.
+- **Afbeeldingen & snelheid** — bij Bruidsmode Haarlem (SEA-landingspagina) WebP-line-icons gebruikt + een responsive opzet (<768px) voor mobile-friendliness, met alt-teksten en expliciete width/height om layoutverschuiving (CLS) te voorkomen.
 - **Core Web Vitals** — bij **Sabé Verpakkingen** een PageSpeed-verbeterplan uitgevoerd (scores grotendeels groen; performance-score was het laatste aandachtspunt). Dit is letterlijk het meten/verbeteren van Core Web Vitals dat Yannick noemt.
 - **Crawlbare structuur** — bij Sabé het interne linkplan (analyseverslag 1) + de sitemap-fix met `lastmod` voor subcategoriepagina's. Beide raken direct aan "crawlbare linkstructuur".
+- **Schema.org** — de FAQ-secties in mijn dynamische SEO-template zijn geldige `FAQPage`-structured data, automatisch gegenereerd via de Yoast-schema-router. Niet alles wordt structured data (reviews bijvoorbeeld niet, tenzij als producttype), dus ik zet Schema gericht in waar het rijke resultaten oplevert.
 
 **Wat ik morgen al anders doe (Yannicks tips, direct toepasbaar):**
 1. Elke nieuwe pagina door **Lighthouse** halen en de score checken.
 2. Elke afbeelding nalopen: alt-tekst aanwezig? gecomprimeerd (WebP)? width/height gezet?
 3. De heading-structuur als outline bekijken (één H1, logische hiërarchie).
+4. **Detailed SEO Extension** gebruiken om metadata (title, description, headings) snel te controleren.
 
 ## 5. SEO ↔ CRO — relevant voor mijn landingspagina's
 
+Omdat ik veel CRO-landingspagina's bouw, is Yannicks SEO/CRO-inzicht extra waardevol: **SEO brengt het verkeer, CRO laat het converteren.** Deze structurele oplossing pas ik zelf toe: op de Bruidsmode Haarlem-landingspagina staat de primaire CTA ("Afspraak maken") direct boven de vouw, terwijl de uitgebreidere, keyword-relevante tekst daaronder volgt — zo bedien ik conversie én vindbaarheid op één pagina.
 
 ## 6. Wat ik hieruit leer over "gebruikersgedrag → frontend"
 
@@ -63,3 +69,7 @@ De principes uit het interview herken ik direct in pagina's die ik tijdens mijn 
 - **Snelheid is gedrag.** LCP/CLS zijn niet "techniek voor de techniek" — een springerige of trage pagina verliest echte mensen én ranking. Performance is dus een UX-keuze.
 - **SEO is een kwaliteitseis, geen extraatje.** Net als bij analyseverslag 1 (kwaliteit begint bij de uitvoerder) geldt: kleine technische keuzes — een verkeerde canonical, een ontbrekende H1 — kunnen maandenlang onzichtbaar schade doen. Bewust bouwen voorkomt dat.
 - **Vroeg betrekken loont.** SEO achteraf inbouwen kost veel meer tijd/geld dan het vanaf de design-fase meenemen — een argument om als front-ender vroeg mee te praten in projecten.
+
+## 7. Toegepast bewijs
+
+De principes hierboven zijn terug te zien in mijn eigen pagina's: de Bruidsmode Haarlem-landingspagina (server-side gerenderd, WebP-icons, responsive, CTA boven de vouw — zie Afb. 5.1 in het stageverslag) en de dynamische SEO-template (FAQPage-schema, semantische module-opbouw). Het Rico-interview (CRO) is uitgewerkt als analyseverslag 3, dat dit verslag verdiept vanuit de conversiekant.

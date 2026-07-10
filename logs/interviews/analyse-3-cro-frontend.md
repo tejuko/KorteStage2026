@@ -4,6 +4,7 @@
 >
 > Waar verslag 2 de **SEO**-kant van "verkeer naar de pagina" behandelt, gaat dit verslag over de **CRO**-kant: het verkeer dat binnen is omzetten in conversie. Samen dekken ze het vliegwiel dat Rico beschrijft: *SEO levert (warm) verkeer, CRO zet het om.*
 >
+> Opgesteld 2026-06-23, afgerond juli 2026.
 
 ---
 
@@ -43,12 +44,14 @@ Rico's bureaustoelshop-voorbeeld laat zien dat conversiewinst zelden uit één d
 
 De CRO-principes herken ik direct in mijn landingspagina's — en ze geven me een taal om mijn keuzes te onderbouwen:
 
+- **Boven de vouw / hero** — mijn **case study-template** (post 30328, NineTwoFive-case) opent met een hero met label ("Ninetwofive" / "SEA case study"), kop, copy en CTA. Rico's "80% scrollt niet" onderbouwt waarom daar de meeste zorg in zit (zie de illustraties in §7).
 - **Vertrouwenselementen geschaald naar merk** — in de template zit precies de "bewijs tonen"-laag die Rico beschrijft, geverifieerd op staging:
   - **Kernresultaten**: `+183%` Conversies · `+153%` Conversiewaarde · `+113%` Marge na Ad Spend
   - **Resultaten-sectie** ("Primary results"): `Top 5% performance` (+183% meer aankopen via Google Ads) · `4,8×` rendement per euro ad spend · `−38%` CPA (benchmark −12% sector)
   - **Team-sectie** ("Team achter het project"): Tristan van Duin, Jordy de Boer, Nick Houtzager → de "echte mensen erbij"-/expert-laag die Rico aanraadt
   - **Beginsituatie** (probleemstelling die de case geloofwaardig maakt): Moordende concurrentie · Koud verkeer converteren · Geen merkherkenning · Druk op rendement
 - **Laagdrempelig vooraanbod** — de afsluitende CTA van de template is letterlijk **"Plan een groeigesprek"** — exact Rico's "proefrit"-logica: geen directe verkoop, maar een laagdrempelige eerste stap voor een duurdere dienst.
+- **CTA-principes** — hero-CTA "**Bekijk website**" en eind-CTA "**Plan een groeigesprek**" zijn beide kort en **actiegericht** (Rico's eis). De signature **gradient-slide hover** op mijn calculator-knoppen sluit aan op "opvallen + contrast".
 - **Bewuste kleur** — Rico bevestigde mijn schoolkennis (blauw = vertrouwen, groen = positief); ik kan mijn kleurkeuzes in de RM-huisstijl daarmee onderbouwen.
 - **Interactie-"deuren"** — de flexible-content-kaarten in mijn templates (case-/dienstkaarten) zijn letterlijk de "deuren" die Rico beschrijft.
 
@@ -69,3 +72,15 @@ Rico en Yannick (verslag 2) sluiten naadloos op elkaar aan: **SEO brengt warm ve
 - **De eerste schermvulling is bijna alles.** Met 80% niet-scrollers is de hero geen "intro" maar de hele pitch.
 - **Een CTA is gedrag, geen knop.** Opvallen, de juiste actie, geen concurrentie en drempelverlaging bepalen of iemand klikt.
 - **Eerlijk over data.** RM werkt nu vaak "op our best knowledge" omdat tracking ontbreekt; het ideaal is een meet-/testlab. Dat leert me dat ik mijn eigen aannames expliciet moet maken en, waar mogelijk, met Lighthouse/data moet staven — net als bij analyseverslag 1 en 2.
+
+## 7. Illustratie
+
+De CRO-principes zijn zichtbaar in mijn case study-template:
+
+![Hero van de case study-template met label, kop en CTA](media/analyse/case-study-hero-video.png)
+> *Boven de vouw: label, kop, copy en CTA — waar volgens Rico ~80% van de aandacht naartoe moet.*
+
+![Resultaten-sectie met kerncijfers en count-up-animatie](media/analyse/primaryperformance-cards-091632.png)
+> *De "bewijs tonen"-laag: kernresultaten (+183% / 4,8× / −38%) als vertrouwenselementen, geschaald naar de case.*
+
+Rico is Head of Tech bij Ranking Masters en sprak in dit interview vanuit de CRO-kant.
