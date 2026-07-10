@@ -22,16 +22,19 @@ De SEO-diensten-pagina uit een Figma-ontwerp nabouwen in WordPress met Bricks Bu
 
 ## Resultaat
 
-Afgeronde pagina, gepresenteerd aan stagebegeleider Danique Lammertink op 2026-04-15.
+Afgeronde pagina, gepresenteerd aan stagebegeleider Danique Lammertink op 15/04/2026.
 
-> *Afbeelding: eindresultaat in Bricks naast het Figma-ontwerp*  
-> `[AAN TE VULLEN]`
+![Het Figma-ontwerp dat ik moest nabouwen](media/opdrachten/01-bricks-figma.png)
+> *Het Figma-bronontwerp.*
+
+![Mijn nagebouwde versie in Bricks Builder](media/opdrachten/01-bricks-resultaat.png)
+> *Mijn nagebouwde pagina in Bricks Builder.*
 
 ---
 
 ## Feedback
 
-> Danique: "Veel progressie ten opzichte van de website die je een maand geleden als toelatingsopdracht voor Ranking Masters hebt gemaakt." *(parafrase, 2026-04-15)*
+> Danique: "Veel progressie ten opzichte van de website die je een maand geleden als toelatingsopdracht voor Ranking Masters hebt gemaakt." *(parafrase, 15/04/2026)*
 
 ---
 

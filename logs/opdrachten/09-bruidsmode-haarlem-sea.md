@@ -1,7 +1,7 @@
 # Opdracht 9 — Bruidsmode Haarlem: SEA-landingspagina
 
 **Type:** Klantopdracht  
-**Periode:** 2026-05-19 t/m 2026-05-20  
+**Periode:** 19/05/2026 t/m 20/05/2026  
 **Leerdoelen:** 1 (klaar voor review begeleider), 3 (ACF-veldkeuzes = design-beslissingen), 4 (zelfstandig landingspagina gebouwd), 5 (bewuste CRO-keuzes gedocumenteerd)
 
 ---
@@ -32,23 +32,14 @@ Voor **Bruidsmode Haarlem** een SEA-landingspagina bouwen die aansluit op hun Go
 
 Volledig werkende SEA-landingspagina, compleet aanpasbaar via ACF — bewuste keuze zodat het team de content zelf kan beheren.
 
-> *Afbeelding: hero-sectie van de landingspagina*  
-> `[AAN TE VULLEN]`
-
-> *Afbeelding: carousel-sectie (desktop)*  
-> `[AAN TE VULLEN]`
-
-> *Afbeelding: mobiele weergave (<768px)*  
-> `[AAN TE VULLEN]`
-
-> *Afbeelding: ACF-veldgroep in WP-admin*  
-> `[AAN TE VULLEN]`
+![De door mij gebouwde SEA-landingspagina voor Bruidsmode Haarlem](media/opdrachten/iv-5-1-bruidsmode.png)
+> *De SEA-landingspagina (eigen bouw, volledig ACF-bestuurbaar). [Live: bruidsmodehaarlem.nl/vind-je-droomjurk](https://www.bruidsmodehaarlem.nl/vind-je-droomjurk/)*
 
 ---
 
 ## Feedback
 
-`[AAN TE VULLEN: feedback van begeleider na review]`
+Reviewpunten ontvangen op 28/5 (ochtendblok) en een tweede ronde op 2/6 (8 concrete punten op `/sea-paservaring/`) — live geverifieerd en verwerkt, met backups en geleegde caches.
 
 ---
 
@@ -56,4 +47,3 @@ Volledig werkende SEA-landingspagina, compleet aanpasbaar via ACF — bewuste ke
 
 - Een custom carousel zonder library bouwen geeft volledige controle over animatie en performance — de silent-jump techniek zorgt voor een naadloze loop zonder zichtbare herhaling.
 - ACF-veldgroepen voor klantsites altijd zo opzetten dat het team content zonder ontwikkelaar kan aanpassen.
-- `[AAN TE VULLEN na feedback]`

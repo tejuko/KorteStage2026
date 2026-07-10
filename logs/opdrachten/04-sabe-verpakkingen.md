@@ -36,12 +36,12 @@ Op basis van een actieplan uit februari 2026 op honderden pagina's interne links
 
 ~580 link-toevoegingen verwerkt + ~311 rijen onderbouwd uitgesloten.
 
-> *Afbeelding: spreadsheet-fragment met groen/rood-markering*  
-> `[AAN TE VULLEN]`
+![Sabé-linkplan spreadsheet met groen/rood-markering](media/opdrachten/5-6-sabe-spreadsheet.png)
+> *Groen = link toegevoegd, rood = onderbouwd uitgesloten.*
 
 ### Feedback
 
-> Nick (DGM'er + (AI) Search Projectmanager): "De implementatie ziet er goed uit." *(parafrase, 2026-05-05)*
+> Nick (DGM'er + (AI) Search Projectmanager): "De implementatie ziet er goed uit." *(parafrase, 05/05/2026)*
 
 ---
 
@@ -57,13 +57,7 @@ Systematisch criteria afgegaan, met AI als sparringpartner voor analyse en oplos
 
 ### Resultaat
 
-Scores grotendeels naar groen gebracht — performance-score nog lopend.
-
-> *Afbeelding: PageSpeed-score vóór verbeteringen*  
-> `[AAN TE VULLEN]`
-
-> *Afbeelding: PageSpeed-score ná verbeteringen*  
-> `[AAN TE VULLEN]`
+Scores grotendeels naar groen gebracht; de performance-score bleef het hardnekkigst en is later overgenomen door mijn stagebegeleider (Danique).
 
 ---
 

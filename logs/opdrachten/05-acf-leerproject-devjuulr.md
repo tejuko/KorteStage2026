@@ -28,14 +28,7 @@ Naast het klantwerk op mijn eigen WordPress-dev-omgeving een leerproject opzette
 
 Werkende ACF-site op `tess.devjuulr.com` met custom post types, field groups en PHP-templates.
 
-> *Afbeelding: `/ons-team` met team-CPT-loop*  
-> `[AAN TE VULLEN]`
-
-> *Afbeelding: ACF Field Groups overzicht in WP-admin*  
-> `[AAN TE VULLEN]`
-
-> *Afbeelding: `/faq` met accordion-weergave*  
-> `[AAN TE VULLEN]`
+> *Van dit eerste ACF-leerproject zijn geen screenshots meer beschikbaar: dezelfde dev-omgeving (`tess.devjuulr.com`) heb ik daarna hergebruikt voor mijn uitgebreidere Barbie-ACF-project (zie opdracht 6), waardoor de team-/FAQ-pagina's zijn vervangen.*
 
 ---
 

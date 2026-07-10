@@ -1,7 +1,7 @@
 # Opdracht 3 — Ina Divina: achtergrondafbeeldingen via ACF
 
 **Type:** Klantopdracht (WordPress + ACF)  
-**Periode:** Week 1–2 (afgerond ~2026-04-20)  
+**Periode:** Week 1–2 (afgerond ~20/04/2026)  
 **Leerdoelen:** 1 (feedback gevraagd aan Danique), 2 (oriënteren), 4 (prototypen en uitwerken)
 
 ---
@@ -22,16 +22,13 @@ Voor escortbureau **Ina Divina** op een groot aantal pagina's de achtergrondafbe
 
 ## Resultaat
 
-Pagina's voorzien van nieuwe achtergronden, opdracht afgerond rond 2026-04-20.
+Pagina's voorzien van nieuwe achtergronden, opdracht afgerond rond 20/04/2026.
 
-> *Afbeelding: voor-situatie — originele achtergrondafbeelding op een pagina*  
-> `[AAN TE VULLEN]`
+![Tracking-spreadsheet ronde 1: pagina's met status en notities](media/opdrachten/03-inadivina-tracking-1.png)
+> *Mijn tracking-spreadsheet (eerste ronde).*
 
-> *Afbeelding: na-situatie — nieuwe achtergrondafbeelding via ACF*  
-> `[AAN TE VULLEN]`
-
-> *Afbeelding: tracking-spreadsheet en Monday-update*  
-> `[AAN TE VULLEN]`
+![Uitgebreide takenspreadsheet ronde 2 met status, prioriteit en feedback](media/opdrachten/03-inadivina-tracking-2.png)
+> *De tweede ronde als gestructureerde takenlijst met status, prioriteit, feedback en klant-review.*
 
 ---
 

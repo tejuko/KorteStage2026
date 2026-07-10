@@ -1,7 +1,7 @@
 # Opdracht 7 — Ranking Masters: Google Ads-landingspagina
 
 **Type:** Intern project (RM-eigen landingspagina)  
-**Periode:** 2026-05-04 t/m 2026-05-08  
+**Periode:** 04/05/2026 t/m 08/05/2026  
 **Leerdoelen:** 1 (feedback Conrad verwerkt), 3 (Figma als vertrekpunt), 4 (landingspagina bouwen), 5 (evalueren op basis van feedback)
 
 ---
@@ -14,10 +14,10 @@ Een Google Ads-landingspagina bouwen voor Ranking Masters zelf, strikt werkend v
 
 ## Werkproces
 
-- Gestart 2026-05-04 met hero-section, rm-logos, cards-sectie en cases-sectie.
+- Gestart 04/05/2026 met hero-section, rm-logos, cards-sectie en cases-sectie.
 - Figma als enige referentie aangehouden — geen eigen designkeuzes.
-- Feedbackgesprek met **Conrad** op 2026-05-06 (zie hieronder).
-- Feedback verwerkt op 2026-05-08.
+- Feedbackgesprek met **Conrad** op 06/05/2026 (zie hieronder).
+- Feedback verwerkt op 08/05/2026.
 
 ---
 
@@ -31,23 +31,14 @@ Visueel consistente landingspagina conform Figma, inclusief:
 - Statistieken geanimeerd met optellende teller (animated counter)
 - Borders en styling rond tags/buttons
 
-> *Afbeelding: pagina vóór feedback — eerste versie*  
-> `[AAN TE VULLEN]`
-
-> *Afbeelding: pagina ná verwerking feedback — definitieve versie*  
-> `[AAN TE VULLEN]`
-
-> *Afbeelding: detail scrollindicator blauw→oranje*  
-> `[AAN TE VULLEN]`
-
-> *Afbeelding: animated counter op statistieken-sectie*  
-> `[AAN TE VULLEN]`
+![De afgemaakte Google Ads-landingspagina voor Ranking Masters](media/opdrachten/07-google-ads-lp.png)
+> *De definitieve Google Ads-landingspagina — vanuit Figma gebouwd, met de 8 feedbackpunten van Conrad verwerkt.*
 
 ---
 
 ## Feedback
 
-Feedbackgesprek met **Conrad** op 2026-05-06 om 13:00:
+Feedbackgesprek met **Conrad** op 06/05/2026 om 13:00:
 
 | # | Punt | Actie |
 |:-:|---|---|
@@ -60,7 +51,7 @@ Feedbackgesprek met **Conrad** op 2026-05-06 om 13:00:
 | 7 | "Andere bureaus vs. ons bureau" | Gradient oplossen |
 | 8 | Cijfers | Animated optellen |
 
-> Conrad: "Overall goed werk geleverd." *(2026-05-06)*
+> Conrad: "Overall goed werk geleverd." *(06/05/2026)*
 
 ---
 

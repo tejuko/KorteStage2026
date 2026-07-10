@@ -1,7 +1,7 @@
 # Opdracht 13 — Ranking Masters: Case study-pagina (herbruikbare template)
 
 **Type:** Intern project (RM-eigen)
-**Periode:** voorbereiding 2026-06-10, doorgebouwd vanaf 2026-06-22
+**Periode:** voorbereiding 10/06/2026, doorgebouwd vanaf 22/06/2026
 **Status:** In ontwikkeling
 **Locatie:** post **30328** ("Case study template - SEA / SEO") op staging — `env-rankingmastersnl-getdevdone.kinsta.cloud`
 **Edit-URL:** https://env-rankingmastersnl-getdevdone.kinsta.cloud/wp-admin/post.php?post=30328&action=edit
@@ -17,11 +17,11 @@ Een **case study-pagina** voor Ranking Masters bouwen — niet als één losse p
 
 ## Werkproces
 
-**2026-06-10**
+**10/06/2026**
 - Goed naar de **backend** van de case study gekeken: die moet écht een herbruikbare template worden.
 - Vooraf naar de backend/datastructuur kijken (i.p.v. pas tijdens het bouwen) — zelfde les als bij de dynamische SEO-template.
 
-**2026-06-22** (eerste dag terug na ziekteweek)
+**22/06/2026** (eerste dag terug na ziekteweek)
 - Planning doorgekeken en met **Danique** overlegd → prioriteit: case study-pagina afmaken.
 - **Veel progressie** op de case study-pagina gemaakt.
 

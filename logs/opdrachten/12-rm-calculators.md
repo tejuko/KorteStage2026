@@ -1,7 +1,7 @@
 # Opdracht 12 — Ranking Masters: Calculator-widgets (SEO + Google Ads)
 
 **Type:** Intern project (RM-eigen interactieve widgets)
-**Periode:** gestart 2026-06-01
+**Periode:** gestart 01/06/2026
 **Status:** In ontwikkeling
 **Leerdoelen:** 1 (feedback Conrad verwerkt), 4 (interactief component bouwen + itereren), 5 (live verifiëren op staging)
 
@@ -17,7 +17,7 @@ Twee interactieve calculator-widgets met Ranky-mascotte, in RM-huisstijl:
 
 ## Werkproces
 
-**2026-06-01**
+**01/06/2026**
 - SEO calculator: Ranky-afbeelding vervangen door `ranky-bg.webp` (`/uploads/2025/09/ranky-bg.webp`), Ranky op desktop `bottom: 70px`.
 - Google Ads calculator: Ranky op desktop `bottom: 45px`.
 - Beide oranje knoppen: hover in rankingmasters.nl-stijl — de signature **gradient-slide** (200% oranje gradient die op hover van 0 → -100% schuift in 0.27s) + subtiele lift + schaduw.
@@ -34,7 +34,7 @@ _Beide calculators live geverifieerd op staging. Screenshot volgt._
 
 ## Feedback
 
-**Conrad** (2026-06-01, tussendoor):
+**Conrad** (01/06/2026, tussendoor):
 | # | Punt | Actie |
 |:-:|---|---|
 | 1 | Persoon op Google Ads-calculator | 2× Sjors → **Jordy** links | ✅ verwerkt |

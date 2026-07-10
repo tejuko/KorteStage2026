@@ -1,6 +1,6 @@
 # Interview — Rico (CRO, Ranking Masters)
 
-> **Bron / bijlage bij Leerdoel 2 (Oriënteren en begrijpen).** Onderwerp: conversie-optimalisatie (CRO) en de vertaling naar frontend. Uitgewerkt 2026-06-23 uit drie ruwe transcripts (`~/Downloads/transcripts/Ranking Masters*.txt`) + mijn eigen vragenlijst en aantekeningen. De ruwe spraak-naar-tekst is hieronder samengevat tot leesbare antwoorden; kernuitspraken staan als citaat.
+> **Bron / bijlage bij Leerdoel 2 (Oriënteren en begrijpen).** Onderwerp: conversie-optimalisatie (CRO) en de vertaling naar frontend. Uitgewerkt 23/06/2026 uit drie ruwe transcripts (`~/Downloads/transcripts/Ranking Masters*.txt`) + mijn eigen vragenlijst en aantekeningen. De ruwe spraak-naar-tekst is hieronder samengevat tot leesbare antwoorden; kernuitspraken staan als citaat.
 >
 
 ---

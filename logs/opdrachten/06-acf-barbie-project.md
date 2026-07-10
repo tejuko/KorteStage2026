@@ -1,7 +1,7 @@
 # Opdracht 6 — ACF Barbie-leerproject
 
 **Type:** Eigen leerproject  
-**Periode:** 2026-05-01  
+**Periode:** 01/05/2026  
 **Leerdoelen:** 2 (oriënteren en begrijpen), 3 (verbeelden — eerste Figma-schets vóór bouwen), 4 (prototypen en uitwerken), 5 (evalueren)
 
 ---
@@ -42,6 +42,12 @@ Werkende Barbie-site met CPT-relaties, child theme en ACF-velddefinities. Theme 
 
 ![Filmpagina met via ACF-relatievelden gekoppelde Barbie en sidekick](media/barbie/barbie-film.png)
 > *Filmpagina met de via ACF-relatievelden gekoppelde Barbie (Genevieve) en sidekick (Twyla) — de relaties tussen de Custom Post Types in actie.*
+
+![ACF Field Groups-overzicht in wp-admin: Barbies, Films en Sidekicks](media/barbie/06-barbie-acf-fieldgroups.png)
+> *De ACF Field Groups in wp-admin — één groep per Custom Post Type.*
+
+![Edit Field Group "Films" met de velddefinities, incl. relatievelden](media/barbie/06-barbie-acf-editfilms.png)
+> *De velddefinities van de "Films"-groep, met de relatievelden "Barbie in deze film" en "Sidekick in deze film".*
 
 ---
 

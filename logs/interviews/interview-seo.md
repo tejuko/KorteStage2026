@@ -1,6 +1,6 @@
 # Interview — Yannick (AI Search Projectmanager, Ranking Masters)
 
-> **Bron / bijlage bij Leerdoel 2 (Oriënteren en begrijpen).** Interview afgenomen 2026-04-22, antwoorden uitgewerkt 2026-06-23. Onderwerp: SEO / AI Search en de vertaling naar frontend-development. Dit ruwe interview is de basis voor `analyseverslag-2-yannick-seo-frontend.md`.
+> **Bron / bijlage bij Leerdoel 2 (Oriënteren en begrijpen).** Interview afgenomen 22/04/2026, antwoorden uitgewerkt 23/06/2026. Onderwerp: SEO / AI Search en de vertaling naar frontend-development. Dit ruwe interview is de basis voor `analyseverslag-2-yannick-seo-frontend.md`.
 
 ## Algemeen
 

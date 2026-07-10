@@ -1,7 +1,7 @@
 # Opdracht 11 — Ranking Masters: Dynamische SEO-pagina's
 
 **Type:** Intern project (RM-eigen, herbruikbare paginatemplate)
-**Periode:** gestart 2026-06-01 (toegewezen in webdev kick-off juni), **template afgerond 2026-06-09**, **ingeleverd 2026-06-12**
+**Periode:** gestart 01/06/2026 (toegewezen in webdev kick-off juni), **template afgerond 09/06/2026**, **ingeleverd 12/06/2026**
 **Status:** Ingeleverd — pagina af op staging, wacht op live-zetting door Danique
 **Leerdoelen:** 2 (briefing → frontend-eisen), 3 (Figma "RM Anouk" als vertrekpunt), 4 (volledige pagina bouwen), 5 (live verifiëren op staging)
 
@@ -20,7 +20,7 @@ Een **dynamische, herbruikbare SEO-paginatemplate** bouwen op basis van het Figm
 
 ## Werkproces
 
-- **2026-06-01:** verbonden met nieuwe staging-env (RankingmastersStaging-1), key-auth ingesteld (wachtwoordloos inloggen).
+- **01/06/2026:** verbonden met nieuwe staging-env (RankingmastersStaging-1), key-auth ingesteld (wachtwoordloos inloggen).
 - Hele Figma-pagina nagebouwd op `dynamische-seo-test` (post 36429): ~16 ACF flexible-content secties + fragments — hero, uitleg-varianten, steps-carousel, geschikt/niet-geschikt, vergelijkingstabel, grafiek-cards, lead-form, cases, timeline, quote, logo-grid, impact, steden, link-kolommen, USP-band, team, reviews, FAQ.
 - Alles bewerkbaar via ACF, scoped CSS/JS, conform RM-styleguide.
 - Hero van collega per ongeluk overschreven → hersteld uit WP-revisie 36535 (alleen video-hero behouden).

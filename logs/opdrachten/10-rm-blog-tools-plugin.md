@@ -1,7 +1,7 @@
 # Opdracht 10 — Ranking Masters: RM Blog Tools plugin (`[seo_calculator]`)
 
 **Type:** Intern project (RM-eigen plugin)
-**Periode:** 2026-05-27 — versie 0.4.4 live op staging
+**Periode:** 27/05/2026 — versie 0.4.4 live op staging
 **Leerdoelen:** 2 (oriënteren — diep in WordPress-plugin-architectuur), 4 (prototypen en uitwerken), 5 (evalueren — backup-discipline + iteratie-discipline)
 
 ---

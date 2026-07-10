@@ -16,7 +16,7 @@ Vrije opdracht: een fictieve webshop bouwen in Shopify als kennismaking met het 
 
 - Concept bedacht: een heksen-webshop met als naam **Woh'Tah** (uitgesproken als "wohtah" = water; verwijst naar dat een potion een aparte versie van water is).
 - Shopify-theme aangepast, productenpagina's en branding ingericht.
-- Gepresenteerd aan Danique op 2026-04-17.
+- Gepresenteerd aan Danique op 17/04/2026.
 
 ---
 
@@ -24,17 +24,17 @@ Vrije opdracht: een fictieve webshop bouwen in Shopify als kennismaking met het 
 
 Afgeronde fictieve webshop met eigen merknaam, productlijn en visuele stijl.
 
-> *Afbeelding: homepage Woh'Tah*  
-> `[AAN TE VULLEN]`
+![Homepage van mijn Woh'Tah-webshop](media/opdrachten/5-2-wohtah-home.png)
+> *Homepage Woh'Tah.*
 
-> *Afbeelding: productpagina Woh'Tah*  
-> `[AAN TE VULLEN]`
+![Productpagina van Woh'Tah](media/opdrachten/5-3-wohtah-product.png)
+> *Productpagina Woh'Tah.*
 
 ---
 
 ## Feedback
 
-> Danique: "Leuk bedacht en mooi vormgegeven." *(parafrase, 2026-04-17)*
+> Danique: "Leuk bedacht en mooi vormgegeven." *(parafrase, 17/04/2026)*
 
 ---
 
