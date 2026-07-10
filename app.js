@@ -757,6 +757,11 @@ const artefacten = [
     description: 'Het volledige stageverslag als downloadbaar PDF.'
   },
   {
+    file: 'Stageplan_Tess_Kollof.pdf',
+    title: 'STAGEPLAN',
+    description: 'Mijn oorspronkelijke stageplan met de vijf leerdoelen — de basis van dit stageverslag.'
+  },
+  {
     file: 'feedback-danique-w19.pdf',
     title: 'FEEDBACK DANIQUE',
     description: 'Halverwege-feedback van bedrijfsbegeleider Danique Lammertink — ingevuld 06/05/2026 (week 19).'
