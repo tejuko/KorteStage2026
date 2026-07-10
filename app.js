@@ -839,6 +839,13 @@ const interviews = [
     title: 'Analyse — CRO → frontend',
     code: 'ANALYSE 03',
     description: 'Op basis van het Rico-interview: hoe CRO zich vertaalt naar de frontend — helderheid, vertrouwen, CTA en de eerste schermvulling.'
+  },
+  {
+    file: 'feedbackoverzicht.md',
+    topic: 'Feedback · Leerdoel 1',
+    title: 'Feedbackoverzicht — Samen ontwerpen',
+    code: 'OVERZICHT',
+    description: 'Chronologisch overzicht van alle feedbackmomenten (van wie, waarover, wat ik ermee deed) — het bewijs voor leerdoel 1 (samen ontwerpen).'
   }
 ]
 
