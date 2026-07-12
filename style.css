@@ -1914,6 +1914,24 @@ body.has-custom-cursor * {
   content: 'Volgende';
 }
 
+.daily-book-modal #prevInterview {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.daily-book-modal #nextInterview {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.daily-book-modal #prevInterview::before {
+  content: 'Vorige';
+}
+
+.daily-book-modal #nextInterview::before {
+  content: 'Volgende';
+}
+
 @media (max-width: 900px) {
   .log-modal {
     padding: 1rem;
@@ -4175,7 +4193,8 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
-.artifact-container > .artifact-card:first-child {
+.artifact-container > .artifact-card:first-child,
+.artifact-container > .artifact-card:last-child {
   grid-column: 1 / -1;
 }
 
@@ -4268,6 +4287,39 @@ body {
 .hero-ornament {
   max-width: 400px;
   margin: 1.2rem auto 0.2rem;
+}
+
+/* ==========================================================
+   INTERVIEW-CARDS — bredere layout + zichtbare beschrijving
+========================================================== */
+#interviewGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 820px;
+  margin: 0 auto;
+  gap: 1.6rem;
+}
+
+#interviewGrid .daily-record-card {
+  min-height: 240px;
+  padding: 1.6rem 1.7rem 3.4rem;
+}
+
+/* Beschrijving tonen (daily-cards verbergen 'm standaard) */
+#interviewGrid .daily-record-card p {
+  display: block;
+  margin: 0;
+  max-width: 32ch;
+  color: rgba(240,232,212,0.74);
+  font-family: var(--font-serif);
+  font-size: 0.96rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  #interviewGrid {
+    grid-template-columns: 1fr;
+    max-width: 460px;
+  }
 }
 
 .top-nav button {
