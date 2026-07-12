@@ -130,6 +130,69 @@ const opdrachten = [
       'Een herbruikbare case study-template (ACF flexible content, eigen template-part per module) — opgezet vanuit de backend/datastructuur, net als de dynamische SEO-template. In opbouw met de NineTwoFive-case.',
     status: 'lopend',
     tags: ['WordPress', 'ACF', 'Flexible Content', 'CRO']
+  },
+  {
+    file: '14-logboek-tooling.md',
+    client: 'Eigen tooling',
+    title: 'Logboek-tooling (Stage Logboek-app)',
+    description:
+      'Eigen tooling voor mijn logboek-workflow: slash commands /daglog en /weekreflectie, een media-inbox, en een klikbare macOS-app in RM-kleuren die alles aanstuurt.',
+    status: 'afgerond',
+    tags: ['Tooling', 'Automatisering', 'macOS', 'Workflow']
+  },
+  {
+    file: '15-arbawood.md',
+    client: 'Eigen leerdoel-opdracht',
+    title: 'Arbawood-homepage redesign',
+    description:
+      'Herontwerp van de Arbawood-homepage: eerst een analyse (UX/CRO/hiërarchie), daarna Figma-ontwerpen vóór het bouwen — bewijs voor leerdoel 3. Ook gepresenteerd aan het webdev-team.',
+    status: 'lopend',
+    tags: ['Figma', 'UX', 'CRO', 'Redesign']
+  },
+  {
+    file: '16-rm-over-ons.md',
+    client: 'Ranking Masters · intern',
+    title: 'Over ons-pagina',
+    description:
+      'De Over ons-pagina op staging gebouwd/afgewerkt: hero + een nieuwe senior-expertise-sectie (cijfer-tegels, info-card), geïtereerd op basis van feedback en headless geverifieerd.',
+    status: 'lopend',
+    tags: ['WordPress', 'CSS', 'Huisstijl']
+  },
+  {
+    file: '17-rm-research-innovation.md',
+    client: 'Ranking Masters · intern',
+    title: 'Research & Innovation-pagina',
+    description:
+      'Een Next.js-app als static export in WordPress getild, volledig responsive gemaakt en de cases/video ACF-bewerkbaar. Work in progress, af te maken na de stage.',
+    status: 'lopend',
+    tags: ['Next.js', 'WordPress', 'ACF', 'Responsive']
+  },
+  {
+    file: '18-rm-bedankt-pages.md',
+    client: 'Ranking Masters · intern',
+    title: "Bedankpagina's (campaign host)",
+    description:
+      "Meerdere bedank-/thank-you-pagina's gebouwd via een static campaign host, met een gedeelde shell en ACF-beheerbare content (o.a. video).",
+    status: 'lopend',
+    tags: ['WordPress', 'HTML/CSS', 'ACF']
+  },
+  {
+    file: '19-rm-gratis-tools-pagina.md',
+    client: 'Ranking Masters · intern',
+    title: 'Gratis Tools-pagina',
+    description:
+      'Een losse HTML-pagina omgebouwd tot een volwaardige, gebrande RM-pagina op staging: CSS-scoping gerepareerd, site-echte knoppen, mascotte en een stabiele tool-kaartenlayout.',
+    status: 'afgerond',
+    tags: ['WordPress', 'HTML/CSS', 'Huisstijl']
+  },
+  {
+    file: '20-tomasso-tables-migratie.md',
+    client: 'Tomasso Tables',
+    title: 'WooCommerce-migratie (opschoning)',
+    description:
+      'Een vastgelopen 50 GB WooCommerce-site geanalyseerd en veilig opgeschoond: per bestand gecheckt welke media echt gebruikt wordt → uploads van 48 GB naar 9,3 GB, volledig omkeerbaar.',
+    status: 'lopend',
+    tags: ['WooCommerce', 'Migratie', 'Performance']
   }
 ]
 
