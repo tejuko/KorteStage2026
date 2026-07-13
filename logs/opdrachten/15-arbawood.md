@@ -42,6 +42,9 @@ De **homepage van Arbawood** (https://www.arbawood.nl/) herontwerpen. Dit is een
 ![Mijn Figma-redesign van de Arbawood-homepage](media/opdrachten/6-1-arbawood.png)
 > *Mijn Figma-redesign van de Arbawood-homepage (schets vóór bouwen).*
 
+![De Arbawood-presentatie aan het webdev-team (laatste slide)](media/opdrachten/15-arbawood-presentatie.png)
+> *De presentatie aan het webdev-team (7 juli) — laatste slide "Dat was het redesign!", met Anouk, Nick, Rico en Danique in de call.*
+
 ---
 
 ## Wat ik eruit meeneem
