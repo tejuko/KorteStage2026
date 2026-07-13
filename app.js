@@ -777,6 +777,18 @@ const artefacten = [
     description: 'Eindfeedback van naaste collega Rico Toet — ingevuld 09-07-2026 (week 28).'
   },
   {
+    url: 'https://canva.link/9a6oaelmv78cqtu',
+    label: 'OPEN PRESENTATIE',
+    title: 'PRESENTATIE TERUGKOM-MIDDAG',
+    description: 'Mijn presentatie op de CMD-terugkomochtend (7 mei) over mijn stage — de tussenmeting/zelfevaluatie (leerdoel 5). Opent de Canva-presentatie.'
+  },
+  {
+    url: 'https://docs.google.com/presentation/d/15QAiutc1HVz1cL_IzRcBCtMCBwX8DTAIj2fjoobrVWY/edit?usp=sharing',
+    label: 'OPEN PRESENTATIE',
+    title: 'PRESENTATIE WEBDEV-TEAM',
+    description: 'Mijn presentatie aan het webdev-team (7 juli) over mijn Arbawood-redesign — het verplichte presentatie-onderdeel (leerdoel 5). Opent de slides.'
+  },
+  {
     file: 'Stageplan_Tess_Kollof.pdf',
     title: 'STAGEPLAN',
     description: 'Mijn oorspronkelijke stageplan met de vijf leerdoelen — de basis van dit stageverslag.'
@@ -789,14 +801,19 @@ const artifactSectionContainer = document.getElementById('artifactContainer')
 
 if (artifactSectionContainer) {
   artifactSectionContainer.innerHTML = artefacten
-    .map(item => `
-      <a href="./assets/pdfs/${item.file}" download class="artifact-card">
+    .map(item => {
+      const href = item.url ? item.url : `./assets/pdfs/${item.file}`
+      const attrs = item.url ? 'target="_blank" rel="noreferrer"' : 'download'
+      const label = item.label || (item.url ? 'OPEN LINK' : 'PDF DOWNLOADEN')
+      return `
+      <a href="${href}" ${attrs} class="artifact-card">
         <div class="artifact-glow"></div>
         <h2>${item.title}</h2>
         <p>${item.description}</p>
-        <span>PDF DOWNLOADEN</span>
+        <span>${label}</span>
       </a>
-    `)
+    `
+    })
     .join('')
 }
 
